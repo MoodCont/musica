@@ -10,7 +10,7 @@ namespace musica1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("PUTO EL QUE LO LEA");
+            //marica el que lo lea
         }
     }
 }
