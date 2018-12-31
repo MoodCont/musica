@@ -32,8 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonVisor = new System.Windows.Forms.Button();
+            this.buttonIniciar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -72,26 +72,26 @@
             this.textBox2.TabIndex = 3;
             this.textBox2.UseSystemPasswordChar = true;
             // 
-            // button1
+            // buttonVisor
             // 
-            this.button1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._2d4e09879b6f017f74ffaee0b0011c0a_icono_del_ojo_by_vexels;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(351, 185);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(20, 20);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonVisor.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._2d4e09879b6f017f74ffaee0b0011c0a_icono_del_ojo_by_vexels;
+            this.buttonVisor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonVisor.Location = new System.Drawing.Point(351, 185);
+            this.buttonVisor.Name = "buttonVisor";
+            this.buttonVisor.Size = new System.Drawing.Size(20, 20);
+            this.buttonVisor.TabIndex = 4;
+            this.buttonVisor.UseVisualStyleBackColor = true;
+            this.buttonVisor.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonIniciar
             // 
-            this.button2.Location = new System.Drawing.Point(245, 218);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Iniciar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonIniciar.Location = new System.Drawing.Point(245, 218);
+            this.buttonIniciar.Name = "buttonIniciar";
+            this.buttonIniciar.Size = new System.Drawing.Size(100, 23);
+            this.buttonIniciar.TabIndex = 5;
+            this.buttonIniciar.Text = "Iniciar";
+            this.buttonIniciar.UseVisualStyleBackColor = true;
+            this.buttonIniciar.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -111,8 +111,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(520, 251);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonIniciar);
+            this.Controls.Add(this.buttonVisor);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -131,8 +131,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonVisor;
+        private System.Windows.Forms.Button buttonIniciar;
         private System.Windows.Forms.Button button3;
     }
 }
