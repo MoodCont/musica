@@ -23,7 +23,24 @@ namespace WindowsFormsApp1
             string pNombre = textBoxNombre.Text;
             string pRUC = textBoxRUC.Text ;
             string pDireccion = textBoxDireccion.Text;
-            int pAnio = int.Parse(textBoxAnio.Text);
+            int pAnio = 0;
+            if(textBoxAnio.Text==null)
+            {
+                MessageBox.Show("Campo de Año sin llenar");
+            }
+            else
+            {
+                try
+                {
+                    pAnio = int.Parse(textBoxAnio.Text);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Campo de Mes debe ser un número");
+                    pAnio = -1;
+                }
+            }
+            
 
 
 
