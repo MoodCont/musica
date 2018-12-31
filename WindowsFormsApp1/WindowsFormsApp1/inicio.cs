@@ -23,8 +23,9 @@ namespace WindowsFormsApp1
             string pNombre = textBoxNombre.Text;
             string pRUC = textBoxRUC.Text ;
             string pDireccion = textBoxDireccion.Text;
+            //Validando atributo año
             int pAnio = 0;
-            if(textBoxAnio.Text==null)
+            if(textBoxAnio.Text=="")
             {
                 MessageBox.Show("Campo de Año sin llenar");
             }
@@ -36,16 +37,13 @@ namespace WindowsFormsApp1
                 }
                 catch(Exception ex)
                 {
-                    MessageBox.Show("Campo de Mes debe ser un número");
+                    MessageBox.Show("Campo de Año debe ser un número");
                     pAnio = -1;
                 }
             }
-            
-
-
-
+            //Validando atributo mes
             int pMes = 0;
-            if (textBoxMes.Text == null)
+            if (textBoxMes.Text == "")
             {
                 MessageBox.Show("Campo de Mes sin llenar");
             }
