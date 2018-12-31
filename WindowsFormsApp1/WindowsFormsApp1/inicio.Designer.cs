@@ -56,13 +56,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewLista = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -88,9 +91,9 @@
             // 
             // panel8
             // 
-            this.panel8.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.descarga;
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.dataGridViewLista);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(0, 114);
             this.panel8.Name = "panel8";
@@ -342,6 +345,17 @@
             this.label1.Text = "Crear Empresa";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // dataGridViewLista
+            // 
+            this.dataGridViewLista.BackgroundColor = System.Drawing.Color.LightGray;
+            this.dataGridViewLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewLista.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewLista.Name = "dataGridViewLista";
+            this.dataGridViewLista.Size = new System.Drawing.Size(382, 345);
+            this.dataGridViewLista.TabIndex = 0;
+            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -353,6 +367,7 @@
             this.Text = "inicio";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -362,6 +377,7 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -396,5 +412,6 @@
         private System.Windows.Forms.TextBox textBoxMes;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridView dataGridViewLista;
     }
 }
