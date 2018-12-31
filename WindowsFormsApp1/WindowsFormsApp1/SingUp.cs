@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {//visor de Contraseña
             if(textBox2.UseSystemPasswordChar == false)
             {
                 textBox2.UseSystemPasswordChar = true;
@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
+        {//boton de inicio de sesión
             bool Valor = true;
             // validar inicio de sección
             if (textBox1.Text == "")
