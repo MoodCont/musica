@@ -10,7 +10,7 @@ namespace musica1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hola");
+            Console.WriteLine("hola marco");
         }
     }
 }
