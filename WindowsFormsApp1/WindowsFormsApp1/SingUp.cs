@@ -31,18 +31,24 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            bool Valor = true;
             // validar inicio de sección
             if (textBox1.Text == "")
             {
                 MessageBox.Show("Usuario Vacio");
+                Valor = false;
             }
             if (textBox2.Text == "")
             {
                 MessageBox.Show("Contraseña Vacia");
+                Valor = false;
             }
-            inicio obj = new inicio();
-            obj.Visible = true;
-            Visible = false;
+            if (Valor)
+            {
+                inicio obj = new inicio();
+                obj.Visible = true;
+                Visible = false;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
