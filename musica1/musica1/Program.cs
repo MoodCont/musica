@@ -12,6 +12,8 @@ namespace musica1
         {
             //marica el que lo lea
             Console.ReadKey();
+        
+
         }
     }
 }
