@@ -24,7 +24,19 @@ namespace WindowsFormsApp1
             string pRUC = textBoxRUC.Text ;
             string pDireccion = textBoxDireccion.Text;
             int pAnio = int.Parse(textBoxAnio.Text);
-            int pMes = int.Parse(textBoxMes.Text);
+
+
+
+
+            if (textBoxMes.Text == null)
+            {
+                MessageBox.Show("Campo de Mes sin llenar");
+            }
+            else
+            {
+
+                int pMes = int.Parse(textBoxMes.Text);
+            }
             string pRegimenTri = textBoxRegimenTri.Text;
             string pLibrosElectronicos = textBoxLibrosElectronicos.Text;
             
