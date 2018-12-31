@@ -27,15 +27,22 @@ namespace WindowsFormsApp1
 
 
 
-
+            int pMes = 0;
             if (textBoxMes.Text == null)
             {
                 MessageBox.Show("Campo de Mes sin llenar");
             }
             else
             {
-
-                int pMes = int.Parse(textBoxMes.Text);
+                try
+                {
+                    pMes = int.Parse(textBoxMes.Text);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Campo de Mes debe ser un número");
+                    pMes = -1;
+                }
             }
             string pRegimenTri = textBoxRegimenTri.Text;
             string pLibrosElectronicos = textBoxLibrosElectronicos.Text;
@@ -55,6 +62,7 @@ namespace WindowsFormsApp1
             else
             {
                 MessageBox.Show("Hay campos sin llenar");
+                
             }
 
 
