@@ -11,6 +11,7 @@ namespace musica1
         static void Main(string[] args)
         {
             //marica el que lo lea
+            Console.ReadKey();
         }
     }
 }
