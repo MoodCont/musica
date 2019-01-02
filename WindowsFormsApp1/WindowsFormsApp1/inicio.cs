@@ -80,8 +80,6 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Hay campos sin llenar");
             }
-
-
         }
     }
 }
