@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.dataGridViewLista = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -38,26 +39,28 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.labelMes = new System.Windows.Forms.Label();
+            this.labelAnio = new System.Windows.Forms.Label();
             this.textBoxMes = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonRegistrar = new System.Windows.Forms.Button();
             this.textBoxLibrosElectronicos = new System.Windows.Forms.TextBox();
             this.textBoxRegimenTri = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelLibrosElectronicos = new System.Windows.Forms.Label();
+            this.labelRegimenTributario = new System.Windows.Forms.Label();
             this.textBoxAnio = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelPeriodo = new System.Windows.Forms.Label();
             this.textBoxDireccion = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelDireccion = new System.Windows.Forms.Label();
             this.textBoxRUC = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelRUC = new System.Windows.Forms.Label();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelNombre = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -88,14 +91,25 @@
             // 
             // panel8
             // 
-            this.panel8.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.descarga;
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.dataGridViewLista);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(0, 114);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(384, 347);
             this.panel8.TabIndex = 2;
+            // 
+            // dataGridViewLista
+            // 
+            this.dataGridViewLista.BackgroundColor = System.Drawing.Color.LightGray;
+            this.dataGridViewLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewLista.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewLista.Name = "dataGridViewLista";
+            this.dataGridViewLista.Size = new System.Drawing.Size(382, 345);
+            this.dataGridViewLista.TabIndex = 0;
             // 
             // panel7
             // 
@@ -161,45 +175,45 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label11);
-            this.panel5.Controls.Add(this.label10);
+            this.panel5.Controls.Add(this.labelMes);
+            this.panel5.Controls.Add(this.labelAnio);
             this.panel5.Controls.Add(this.textBoxMes);
-            this.panel5.Controls.Add(this.button1);
+            this.panel5.Controls.Add(this.buttonRegistrar);
             this.panel5.Controls.Add(this.textBoxLibrosElectronicos);
             this.panel5.Controls.Add(this.textBoxRegimenTri);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.labelLibrosElectronicos);
+            this.panel5.Controls.Add(this.labelRegimenTributario);
             this.panel5.Controls.Add(this.textBoxAnio);
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.labelPeriodo);
             this.panel5.Controls.Add(this.textBoxDireccion);
-            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.labelDireccion);
             this.panel5.Controls.Add(this.textBoxRUC);
-            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.labelRUC);
             this.panel5.Controls.Add(this.textBoxNombre);
-            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.labelNombre);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 63);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(500, 398);
             this.panel5.TabIndex = 2;
             // 
-            // label11
+            // labelMes
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(292, 151);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(27, 13);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "Mes";
+            this.labelMes.AutoSize = true;
+            this.labelMes.Location = new System.Drawing.Point(292, 151);
+            this.labelMes.Name = "labelMes";
+            this.labelMes.Size = new System.Drawing.Size(27, 13);
+            this.labelMes.TabIndex = 17;
+            this.labelMes.Text = "Mes";
             // 
-            // label10
+            // labelAnio
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(117, 153);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(26, 13);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Año";
+            this.labelAnio.AutoSize = true;
+            this.labelAnio.Location = new System.Drawing.Point(117, 153);
+            this.labelAnio.Name = "labelAnio";
+            this.labelAnio.Size = new System.Drawing.Size(26, 13);
+            this.labelAnio.TabIndex = 16;
+            this.labelAnio.Text = "Año";
             // 
             // textBoxMes
             // 
@@ -208,15 +222,15 @@
             this.textBoxMes.Size = new System.Drawing.Size(112, 20);
             this.textBoxMes.TabIndex = 15;
             // 
-            // button1
+            // buttonRegistrar
             // 
-            this.button1.Location = new System.Drawing.Point(209, 294);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonRegistrar.Location = new System.Drawing.Point(209, 294);
+            this.buttonRegistrar.Name = "buttonRegistrar";
+            this.buttonRegistrar.Size = new System.Drawing.Size(75, 23);
+            this.buttonRegistrar.TabIndex = 13;
+            this.buttonRegistrar.Text = "Registrar";
+            this.buttonRegistrar.UseVisualStyleBackColor = true;
+            this.buttonRegistrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBoxLibrosElectronicos
             // 
@@ -232,25 +246,25 @@
             this.textBoxRegimenTri.Size = new System.Drawing.Size(358, 20);
             this.textBoxRegimenTri.TabIndex = 11;
             // 
-            // label7
+            // labelLibrosElectronicos
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(10, 240);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 32);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Libros\r\nelectrónicos";
+            this.labelLibrosElectronicos.AutoSize = true;
+            this.labelLibrosElectronicos.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLibrosElectronicos.Location = new System.Drawing.Point(10, 240);
+            this.labelLibrosElectronicos.Name = "labelLibrosElectronicos";
+            this.labelLibrosElectronicos.Size = new System.Drawing.Size(104, 32);
+            this.labelLibrosElectronicos.TabIndex = 10;
+            this.labelLibrosElectronicos.Text = "Libros\r\nelectrónicos";
             // 
-            // label6
+            // labelRegimenTributario
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(10, 195);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 32);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Régimen\r\ntributario";
+            this.labelRegimenTributario.AutoSize = true;
+            this.labelRegimenTributario.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRegimenTributario.Location = new System.Drawing.Point(10, 195);
+            this.labelRegimenTributario.Name = "labelRegimenTributario";
+            this.labelRegimenTributario.Size = new System.Drawing.Size(88, 32);
+            this.labelRegimenTributario.TabIndex = 9;
+            this.labelRegimenTributario.Text = "Régimen\r\ntributario";
             // 
             // textBoxAnio
             // 
@@ -259,15 +273,15 @@
             this.textBoxAnio.Size = new System.Drawing.Size(112, 20);
             this.textBoxAnio.TabIndex = 8;
             // 
-            // label5
+            // labelPeriodo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(10, 150);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 16);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Periodo";
+            this.labelPeriodo.AutoSize = true;
+            this.labelPeriodo.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPeriodo.Location = new System.Drawing.Point(10, 150);
+            this.labelPeriodo.Name = "labelPeriodo";
+            this.labelPeriodo.Size = new System.Drawing.Size(64, 16);
+            this.labelPeriodo.TabIndex = 7;
+            this.labelPeriodo.Text = "Periodo";
             // 
             // textBoxDireccion
             // 
@@ -276,15 +290,15 @@
             this.textBoxDireccion.Size = new System.Drawing.Size(358, 20);
             this.textBoxDireccion.TabIndex = 6;
             // 
-            // label4
+            // labelDireccion
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(10, 105);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 16);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Dirección";
+            this.labelDireccion.AutoSize = true;
+            this.labelDireccion.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDireccion.Location = new System.Drawing.Point(10, 105);
+            this.labelDireccion.Name = "labelDireccion";
+            this.labelDireccion.Size = new System.Drawing.Size(80, 16);
+            this.labelDireccion.TabIndex = 5;
+            this.labelDireccion.Text = "Dirección";
             // 
             // textBoxRUC
             // 
@@ -293,15 +307,15 @@
             this.textBoxRUC.Size = new System.Drawing.Size(141, 20);
             this.textBoxRUC.TabIndex = 4;
             // 
-            // label3
+            // labelRUC
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(10, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "RUC";
+            this.labelRUC.AutoSize = true;
+            this.labelRUC.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRUC.Location = new System.Drawing.Point(10, 60);
+            this.labelRUC.Name = "labelRUC";
+            this.labelRUC.Size = new System.Drawing.Size(32, 16);
+            this.labelRUC.TabIndex = 3;
+            this.labelRUC.Text = "RUC";
             // 
             // textBoxNombre
             // 
@@ -310,15 +324,15 @@
             this.textBoxNombre.Size = new System.Drawing.Size(358, 20);
             this.textBoxNombre.TabIndex = 2;
             // 
-            // label2
+            // labelNombre
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre";
+            this.labelNombre.AutoSize = true;
+            this.labelNombre.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombre.Location = new System.Drawing.Point(10, 15);
+            this.labelNombre.Name = "labelNombre";
+            this.labelNombre.Size = new System.Drawing.Size(56, 16);
+            this.labelNombre.TabIndex = 1;
+            this.labelNombre.Text = "Nombre";
             // 
             // panel4
             // 
@@ -353,6 +367,8 @@
             this.Text = "inicio";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -370,31 +386,32 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelNombre;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelDireccion;
         private System.Windows.Forms.TextBox textBoxRUC;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelRUC;
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxLibrosElectronicos;
         private System.Windows.Forms.TextBox textBoxRegimenTri;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelLibrosElectronicos;
+        private System.Windows.Forms.Label labelRegimenTributario;
         private System.Windows.Forms.TextBox textBoxAnio;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelPeriodo;
         private System.Windows.Forms.TextBox textBoxDireccion;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonRegistrar;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox textBoxMes;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelMes;
+        private System.Windows.Forms.Label labelAnio;
+        private System.Windows.Forms.DataGridView dataGridViewLista;
     }
 }

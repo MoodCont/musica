@@ -23,8 +23,42 @@ namespace WindowsFormsApp1
             string pNombre = textBoxNombre.Text;
             string pRUC = textBoxRUC.Text ;
             string pDireccion = textBoxDireccion.Text;
-            int pAnio = int.Parse(textBoxAnio.Text);
-            int pMes = int.Parse(textBoxMes.Text);
+            //Validando atributo año
+            int pAnio = 0;
+            if(textBoxAnio.Text=="")
+            {
+                MessageBox.Show("Campo de Año sin llenar");
+            }
+            else
+            {
+                try
+                {
+                    pAnio = int.Parse(textBoxAnio.Text);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Campo de Año debe ser un número");
+                    pAnio = -1;
+                }
+            }
+            //Validando atributo mes
+            int pMes = 0;
+            if (textBoxMes.Text == "")
+            {
+                MessageBox.Show("Campo de Mes sin llenar");
+            }
+            else
+            {
+                try
+                {
+                    pMes = int.Parse(textBoxMes.Text);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Campo de Mes debe ser un número");
+                    pMes = -1;
+                }
+            }
             string pRegimenTri = textBoxRegimenTri.Text;
             string pLibrosElectronicos = textBoxLibrosElectronicos.Text;
             
@@ -43,6 +77,7 @@ namespace WindowsFormsApp1
             else
             {
                 MessageBox.Show("Hay campos sin llenar");
+                
             }
 
 
@@ -52,5 +87,6 @@ namespace WindowsFormsApp1
         {
             MessageBox.Show("Hola");
         }
+        
     }
 }
