@@ -121,6 +121,7 @@
             this.Name = "SingUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SingUp";
+            this.Load += new System.EventHandler(this.SingUp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

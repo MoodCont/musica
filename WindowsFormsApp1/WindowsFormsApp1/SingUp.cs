@@ -55,5 +55,10 @@ namespace WindowsFormsApp1
         {
             this.Close();
         }
+
+        private void SingUp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
