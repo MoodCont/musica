@@ -15,8 +15,9 @@ namespace WindowsFormsApp1
         public SingUp()
         {
             InitializeComponent();
+            ConectionEmpresas CE = new ConectionEmpresas();
+            CE.conectionEmpresas();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {//visor de Contraseña
             if(textBox2.UseSystemPasswordChar == false)
@@ -31,6 +32,16 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {//boton de inicio de sesión ...
+            ConectionUsuarios CU = new ConectionUsuarios();
+            int validar = CU.Validate(textBox1.Text, textBox2.Text);
+            if (validar == 1)
+            {
+                MessageBox.Show("Correcto");
+            }
+            else
+            {
+                MessageBox.Show("Incorrecto");
+            }
             bool Valor = true;
             // validar inicio de sección
             if (textBox1.Text == "")
@@ -43,12 +54,12 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Contraseña Vacia");
                 Valor = false;
             }
-            if (Valor)
+            if (Valor && validar == 1)
             {
                 inicio obj = new inicio();
                 obj.Visible = true;
                 Visible = false;
-            }
+            }  
         }
 
         private void button3_Click(object sender, EventArgs e)
