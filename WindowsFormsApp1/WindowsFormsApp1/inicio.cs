@@ -16,7 +16,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             // guardando valores del formulario
@@ -67,21 +66,16 @@ namespace WindowsFormsApp1
             //crear empresa con el boton registrar creando un obj Empresa
             Empresa NuevaEmpresa = new Empresa(pNombre,pRUC,pDireccion,pAnio,pMes,pRegimenTri,pLibrosElectronicos);
             //validar datos de entrada
-            if(NuevaEmpresa.Validar())
+            ConectionEmpresas CE = new ConectionEmpresas();
+            if (CE.Validate(textBoxRUC.Text)==0)
             {
-
-                //debemos crear un modulo para buscar si esta empresa ya esta en la base de datos
-
-                //de no estar registrado debemos guardar y mostrar en la lista de empresas en la base de datos
-                MessageBox.Show("Empresa Guardada");
-                //puto el que lo lea :v
+                string respuesta = CE.insert(textBoxRUC.Text, textBoxNombre.Text, int.Parse(textBoxAnio.Text), int.Parse(textBoxMes.Text), textBoxDireccion.Text, textBoxRegimenTri.Text, textBoxLibrosElectronicos.Text);
+                MessageBox.Show(respuesta);
             }
             else
             {
-                MessageBox.Show("Hay campos sin llenar");
+                MessageBox.Show("ya EXISTE");
             }
-
-
         }
     }
 }

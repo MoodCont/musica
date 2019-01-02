@@ -13,20 +13,6 @@ namespace WindowsFormsApp1
         SqlCommand cmd;
         SqlDataReader reader;
         SqlConnection SConection;
-
-        public void conectionEmpresas()
-        {
-            try
-            {
-                SConection = new SqlConnection("Data Source=DARKPEARL\\SQLEXPRESS01;Initial Catalog= moodCont;Integrated Security=true");
-                SConection.Open();
-                MessageBox.Show("conectado");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("no se conecto" + ex.ToString());
-            }
-        }
         public int Validate(string usuario,string password)
         {
             int validado = 0;
