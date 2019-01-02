@@ -28,6 +28,7 @@ namespace WindowsFormsApp1
             if(textBoxAnio.Text=="")
             {
                 MessageBox.Show("Campo de Año sin llenar");
+                pAnio = -1;
             }
             else
             {
@@ -46,6 +47,7 @@ namespace WindowsFormsApp1
             if (textBoxMes.Text == "")
             {
                 MessageBox.Show("Campo de Mes sin llenar");
+                pMes = -1;
             }
             else
             {
@@ -67,26 +69,19 @@ namespace WindowsFormsApp1
             //validar datos de entrada
             if(NuevaEmpresa.Validar())
             {
-                MessageBox.Show("Empresa Guardada");
+
                 //debemos crear un modulo para buscar si esta empresa ya esta en la base de datos
 
                 //de no estar registrado debemos guardar y mostrar en la lista de empresas en la base de datos
-
+                MessageBox.Show("Empresa Guardada");
                 //puto el que lo lea :v
             }
             else
             {
                 MessageBox.Show("Hay campos sin llenar");
-                
             }
 
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hola");
-        }
-        
     }
 }
