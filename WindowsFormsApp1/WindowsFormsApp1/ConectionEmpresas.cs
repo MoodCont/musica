@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
         SqlCommand cmd;
         SqlDataReader reader;
         SqlConnection SConection;
-
+        //Verifica conexion
         public void conectionEmpresas()
         {
             try
@@ -27,24 +27,30 @@ namespace WindowsFormsApp1
                 MessageBox.Show("no se conecto" + ex.ToString());
             }
         }
-        public string insert(string RUC, string Nombre, string anio, string mes,string direccion) 
+        //Insertar empresa
+        public string insert(string RUC, string Nombre, int anio, int mes,string direccion,string libros_electronicos,string Regimen_tributario) 
         {
             string salida = "se inserto";
             try
             {
-                cmd = new SqlCommand("Insert into empresas(Ruc,Nombre,Date_Anio,Date_mes,Direccion) values('" + RUC + "','" + Nombre + "','" + anio + "','" + mes + "','" + direccion + "')",SConection);
+                SConection = new SqlConnection("Data Source=DARKPEARL\\SQLEXPRESS01;Initial Catalog= moodCont;Integrated Security=true");
+                SConection.Open();
+                cmd = new SqlCommand("Insert into Empresas(nombre,RUC,direccion,P_anio,P_mes,regimen_tributario,libros_electronicos) values('" + Nombre + "','" + RUC + "','" + direccion + "','" + anio + "','" + mes+ "','" + Regimen_tributario + "','" + libros_electronicos + "')", SConection);
                 cmd.ExecuteNonQuery();
             } catch (Exception ex) {
                 salida="no se inserto" + ex.ToString();
             }
             return salida;
         }
+        //Validar existencia de empresa
         public int Validate(string RUC)
         {
             int existe = 0;
             try
             {
-                cmd = new SqlCommand("Select * from Empresas Where RUC="+ RUC+"'", SConection);
+                SConection = new SqlConnection("Data Source=DARKPEARL\\SQLEXPRESS01;Initial Catalog= moodCont;Integrated Security=true");
+                SConection.Open();
+                cmd = new SqlCommand("SELECT * FROM Empresas Where RUC='"+ RUC +"'", SConection);
                 reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
