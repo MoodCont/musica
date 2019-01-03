@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
         {
             try
             {
-                SConection = new SqlConnection("Data Source=192.168.0.100,1433;Initial Catalog= moodCont;user id=mao;password=123");
+                SConection = new SqlConnection("Data Source=192.168.0.101,1433;Initial Catalog= moodCont;user id=sa;password=123456");
                 SConection.Open();
                 MessageBox.Show("conectado");
             }
