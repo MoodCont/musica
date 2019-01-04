@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form2 : Form
+    public partial class Mood : Form
     {
-        public Form2()
+        public Mood()
         {
             InitializeComponent();
         }
@@ -23,11 +23,7 @@ namespace WindowsFormsApp1
             else { panelSubMenuAsientos.Visible = true; }
         }
 
-        private void buttonIngresarAsiento_Click(object sender, EventArgs e)
-        {
-            if (panelIngresarAsiento.Visible == true) { panelIngresarAsiento.Visible = false; }
-            else { panelIngresarAsiento.Visible = true; }
-        }
+        
         
     }
 }

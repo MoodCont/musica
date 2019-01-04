@@ -101,7 +101,7 @@ namespace WindowsFormsApp1
 
         private void buttonPrueba_Click(object sender, EventArgs e)
         {
-            Form2 obj = new Form2();
+            Mood obj = new Mood();
             obj.Visible = true;
             Visible = false;
         }
