@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
             int validado = 0;
             try
             {
-                SConection = new SqlConnection("Data Source=DARKPEARL\\SQLEXPRESS01;Initial Catalog= moodCont;Integrated Security=true");
+                SConection = new SqlConnection("Data source= 192.168.0.101,1433; initial catalog=moodCont; user id=marcoConection; password=Conection");
                 SConection.Open();
                 cmd = new SqlCommand("SELECT * FROM usuarios  where usuario='"+usuario+"'and pwd='"+password+"'",SConection);
                 reader = cmd.ExecuteReader();

@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
         {
             try
             {
-                SConection = new SqlConnection("Data Source=192.168.0.101,1433;Initial Catalog= moodCont;user id=sa;password=123456");
+                SConection = new SqlConnection("Data source= 192.168.0.101,1433; initial catalog=moodCont; user id=marcoConection; password=Conection");
                 SConection.Open();
                 MessageBox.Show("conectado");
             }
@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
             string salida = "se inserto";
             try
             {
-                SConection = new SqlConnection("Data Source=DARKPEARL\\SQLEXPRESS01;Initial Catalog= moodCont;Integrated Security=true");
+                SConection = new SqlConnection("Data source= 192.168.0.101,1433; initial catalog=moodCont; user id=marcoConection; password=Conection");
                 SConection.Open();
                 cmd = new SqlCommand("Insert into Empresas(nombre,RUC,direccion,P_anio,P_mes,regimen_tributario,libros_electronicos) values('" + Nombre + "','" + RUC + "','" + direccion + "','" + anio + "','" + mes+ "','" + Regimen_tributario + "','" + libros_electronicos + "')", SConection);
                 cmd.ExecuteNonQuery();
@@ -48,7 +48,7 @@ namespace WindowsFormsApp1
             int existe = 0;
             try
             {
-                SConection = new SqlConnection("Data Source=DARKPEARL\\SQLEXPRESS01;Initial Catalog= moodCont;Integrated Security=true");
+                SConection = new SqlConnection("Data source= 192.168.0.101,1433; initial catalog=moodCont; user id=marcoConection; password=Conection");
                 SConection.Open();
                 cmd = new SqlCommand("SELECT * FROM Empresas Where RUC='"+ RUC +"'", SConection);
                 reader = cmd.ExecuteReader();

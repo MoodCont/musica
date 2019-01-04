@@ -29,23 +29,27 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.buttonIngresarAsiento = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.button3);
@@ -60,39 +64,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 461);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(684, 100);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Location = new System.Drawing.Point(3, 152);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 40);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Gray;
-            this.panel4.Location = new System.Drawing.Point(3, 106);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 40);
-            this.panel4.TabIndex = 4;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Location = new System.Drawing.Point(3, 198);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 40);
-            this.panel5.TabIndex = 5;
             // 
             // button4
             // 
@@ -109,6 +80,14 @@
             this.button4.Text = "Asientos";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Gray;
+            this.panel7.Location = new System.Drawing.Point(3, 244);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 40);
+            this.panel7.TabIndex = 6;
+            // 
             // button3
             // 
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
@@ -123,6 +102,14 @@
             this.button3.TabIndex = 6;
             this.button3.Text = "Sub Sistemas";
             this.button3.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Gray;
+            this.panel5.Location = new System.Drawing.Point(3, 198);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(5, 40);
+            this.panel5.TabIndex = 5;
             // 
             // button2
             // 
@@ -154,6 +141,22 @@
             this.button1.Text = "Reportes";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Location = new System.Drawing.Point(3, 152);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 40);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Gray;
+            this.panel4.Location = new System.Drawing.Point(3, 106);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(5, 40);
+            this.panel4.TabIndex = 4;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.mood;
@@ -164,13 +167,32 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel7
+            // panel2
             // 
-            this.panel7.BackColor = System.Drawing.Color.Gray;
-            this.panel7.Location = new System.Drawing.Point(3, 244);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(5, 40);
-            this.panel7.TabIndex = 6;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(684, 100);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(100)))));
+            this.panel6.Controls.Add(this.buttonIngresarAsiento);
+            this.panel6.Location = new System.Drawing.Point(0, 290);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 100);
+            this.panel6.TabIndex = 2;
+            // 
+            // buttonIngresarAsiento
+            // 
+            this.buttonIngresarAsiento.Location = new System.Drawing.Point(3, 3);
+            this.buttonIngresarAsiento.Name = "buttonIngresarAsiento";
+            this.buttonIngresarAsiento.Size = new System.Drawing.Size(194, 43);
+            this.buttonIngresarAsiento.TabIndex = 0;
+            this.buttonIngresarAsiento.Text = "Ingresar Asiento";
+            this.buttonIngresarAsiento.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -184,13 +206,12 @@
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
@@ -201,5 +222,8 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button buttonIngresarAsiento;
     }
 }
