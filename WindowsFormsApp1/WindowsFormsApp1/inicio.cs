@@ -18,68 +18,31 @@ namespace WindowsFormsApp1
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            // guardando valores del formulario
-            string pNombre = textBoxNombre.Text;
-            string pRUC = textBoxRUC.Text;
-            string pDireccion = textBoxDireccion.Text;
-            //Validando atributo año
-            int pAnio = 0;
-            if (textBoxAnio.Text == "")
-            {
-                MessageBox.Show("Campo de Año sin llenar");
-                pAnio = -1;
-            }
-            else
-            {
-                try
-                {
-                    pAnio = int.Parse(textBoxAnio.Text);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Campo de Año debe ser un número" + ex.ToString());
-                    pAnio = -1;
-                }
-            }
-            //Validando atributo mes
-            int pMes = 0;
-            if (textBoxMes.Text == "")
-            {
-                MessageBox.Show("Campo de Mes sin llenar");
-                pMes = -1;
-            }
-            else
-            {
-                try
-                {
-                    pMes = int.Parse(textBoxMes.Text);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Campo de Mes debe ser un número"+ex.ToString());
-                    pMes = -1;
-                }
-            }
-            string pRegimenTri = textBoxRegimenTri.Text;
-            string pLibrosElectronicos = textBoxLibrosElectronicos.Text;
-
             //crear empresa con el boton registrar creando un obj Empresa
             bool validar = true;
-            if (pNombre == "") { validar = false; }
-            if (pRUC == "") { validar = false; }
-            if (pDireccion == "") { validar = false; }
-            if (pAnio == -1) { validar = false; }
-            if (pMes == -1) { validar = false; }
-            if (pRegimenTri == "") { validar = false; }
-            if (pLibrosElectronicos == "") { validar = false; }
+            if (textBoxNombre.Text == "") { validar = false; }
+            if (textBoxRUC.Text.Length != 10)
+            {
+                MessageBox.Show("el RUC no valido");
+                textBoxRUC.Text = "";
+            }
+            if (textBoxRUC.Text == "") { validar = false; }
+            if (textBoxDireccion.Text == "") { validar = false; }
+            try
+            {
+                int.Parse(textBoxAnio.Text);
+                int.Parse(textBoxMes.Text);
+            }catch{
+                MessageBox.Show("El campo de fecha debe ser Entero = error ");
+                textBoxAnio.Text = "";
+                textBoxMes.Text = "";
+                validar = false;
+            }
+            if (textBoxRegimenTri.Text == "") { validar = false; }
+            if (textBoxLibrosElectronicos.Text == "") { validar = false; }
             //Despues de validar si no esta vacio validamos si existe para guardar o no
             if (validar == true)
             {
-                if (pRUC.Length!=10)
-                {
-                    MessageBox.Show("el RUC no valido");
-                    textBoxRUC.Text = "";
-                }
                 //validar datos de entrada
                 ConectionEmpresas CE = new ConectionEmpresas();
                 if (CE.Validate(textBoxRUC.Text) == 0)
@@ -123,11 +86,6 @@ namespace WindowsFormsApp1
             Mood obj = new Mood();
             obj.Visible = true;
             Visible = false;
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
