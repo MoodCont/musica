@@ -123,6 +123,16 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap f38bfb47e0d4bf986a6e92d86ec254f2 {
+            get {
+                object obj = ResourceManager.GetObject("f38bfb47e0d4bf986a6e92d86ec254f2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap filesystems_thefolder_649 {
             get {
                 object obj = ResourceManager.GetObject("filesystems_thefolder_649", resourceCulture);

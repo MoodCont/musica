@@ -92,6 +92,12 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Hay campos sin llenar");
             }
         }
-        
+
+        private void buttonPrueba_Click(object sender, EventArgs e)
+        {
+            Form2 obj = new Form2();
+            obj.Visible = true;
+            Visible = false;
+        }
     }
 }

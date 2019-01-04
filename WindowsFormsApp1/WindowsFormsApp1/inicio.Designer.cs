@@ -57,6 +57,7 @@
             this.labelNombre = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonPrueba = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -175,6 +176,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.buttonPrueba);
             this.panel5.Controls.Add(this.labelMes);
             this.panel5.Controls.Add(this.labelAnio);
             this.panel5.Controls.Add(this.textBoxMes);
@@ -356,6 +358,16 @@
             this.label1.Text = "Crear Empresa";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // buttonPrueba
+            // 
+            this.buttonPrueba.Location = new System.Drawing.Point(372, 309);
+            this.buttonPrueba.Name = "buttonPrueba";
+            this.buttonPrueba.Size = new System.Drawing.Size(75, 23);
+            this.buttonPrueba.TabIndex = 18;
+            this.buttonPrueba.Text = "Prueba";
+            this.buttonPrueba.UseVisualStyleBackColor = true;
+            this.buttonPrueba.Click += new System.EventHandler(this.buttonPrueba_Click);
+            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -413,5 +425,6 @@
         private System.Windows.Forms.Label labelMes;
         private System.Windows.Forms.Label labelAnio;
         private System.Windows.Forms.DataGridView dataGridViewLista;
+        private System.Windows.Forms.Button buttonPrueba;
     }
 }
