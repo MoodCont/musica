@@ -75,6 +75,11 @@ namespace WindowsFormsApp1
             //Despues de validar si no esta vacio validamos si existe para guardar o no
             if (validar == true)
             {
+                if (pRUC.Length!=10)
+                {
+                    MessageBox.Show("el RUC no valido");
+                    textBoxRUC.Text = "";
+                }
                 //validar datos de entrada
                 ConectionEmpresas CE = new ConectionEmpresas();
                 if (CE.Validate(textBoxRUC.Text) == 0)
