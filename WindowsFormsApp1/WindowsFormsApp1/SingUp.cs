@@ -32,6 +32,7 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {//boton de inicio de sesión ...
+            //valida existencia de usuario
             ConectionUsuarios CU = new ConectionUsuarios();
             int validar = CU.Validate(textBox1.Text, textBox2.Text);
             if (validar == 1)
@@ -42,6 +43,7 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Incorrecto");
             }
+            //
             bool Valor = true;
             // validar inicio de sección
             if (textBox1.Text == "")
