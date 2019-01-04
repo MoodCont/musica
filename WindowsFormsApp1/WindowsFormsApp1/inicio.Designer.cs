@@ -31,10 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.dataGridViewLista = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -57,16 +55,17 @@
             this.labelNombre = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonPrueba = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridViewLista = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -101,23 +100,12 @@
             this.panel8.Size = new System.Drawing.Size(384, 347);
             this.panel8.TabIndex = 2;
             // 
-            // dataGridViewLista
-            // 
-            this.dataGridViewLista.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridViewLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewLista.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewLista.Name = "dataGridViewLista";
-            this.dataGridViewLista.Size = new System.Drawing.Size(382, 345);
-            this.dataGridViewLista.TabIndex = 0;
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.button1);
             this.panel7.Controls.Add(this.textBox7);
-            this.panel7.Controls.Add(this.label9);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 63);
             this.panel7.Name = "panel7";
@@ -130,16 +118,6 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(358, 20);
             this.textBox7.TabIndex = 3;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 16);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 23);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Buscar";
             // 
             // panel6
             // 
@@ -176,7 +154,6 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.buttonPrueba);
             this.panel5.Controls.Add(this.labelMes);
             this.panel5.Controls.Add(this.labelAnio);
             this.panel5.Controls.Add(this.textBoxMes);
@@ -226,7 +203,7 @@
             // 
             // buttonRegistrar
             // 
-            this.buttonRegistrar.Location = new System.Drawing.Point(209, 294);
+            this.buttonRegistrar.Location = new System.Drawing.Point(215, 266);
             this.buttonRegistrar.Name = "buttonRegistrar";
             this.buttonRegistrar.Size = new System.Drawing.Size(75, 23);
             this.buttonRegistrar.TabIndex = 13;
@@ -358,15 +335,26 @@
             this.label1.Text = "Crear Empresa";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // buttonPrueba
+            // button1
             // 
-            this.buttonPrueba.Location = new System.Drawing.Point(372, 309);
-            this.buttonPrueba.Name = "buttonPrueba";
-            this.buttonPrueba.Size = new System.Drawing.Size(75, 23);
-            this.buttonPrueba.TabIndex = 18;
-            this.buttonPrueba.Text = "Prueba";
-            this.buttonPrueba.UseVisualStyleBackColor = true;
-            this.buttonPrueba.Click += new System.EventHandler(this.buttonPrueba_Click);
+            this.button1.Location = new System.Drawing.Point(19, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.mostrar);
+            // 
+            // dataGridViewLista
+            // 
+            this.dataGridViewLista.BackgroundColor = System.Drawing.Color.LightGray;
+            this.dataGridViewLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewLista.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewLista.Name = "dataGridViewLista";
+            this.dataGridViewLista.Size = new System.Drawing.Size(382, 345);
+            this.dataGridViewLista.TabIndex = 0;
             // 
             // inicio
             // 
@@ -380,7 +368,6 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -390,6 +377,7 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -419,12 +407,11 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button buttonRegistrar;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox textBoxMes;
         private System.Windows.Forms.Label labelMes;
         private System.Windows.Forms.Label labelAnio;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridViewLista;
-        private System.Windows.Forms.Button buttonPrueba;
     }
 }
