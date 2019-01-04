@@ -31,8 +31,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.dataGridViewLista = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxBuscar = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -55,17 +57,15 @@
             this.labelNombre = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridViewLista = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -100,24 +100,45 @@
             this.panel8.Size = new System.Drawing.Size(384, 347);
             this.panel8.TabIndex = 2;
             // 
+            // dataGridViewLista
+            // 
+            this.dataGridViewLista.BackgroundColor = System.Drawing.Color.LightGray;
+            this.dataGridViewLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewLista.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewLista.Name = "dataGridViewLista";
+            this.dataGridViewLista.Size = new System.Drawing.Size(382, 345);
+            this.dataGridViewLista.TabIndex = 0;
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.button1);
-            this.panel7.Controls.Add(this.textBox7);
+            this.panel7.Controls.Add(this.textBoxBuscar);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 63);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(384, 51);
             this.panel7.TabIndex = 1;
             // 
-            // textBox7
+            // button1
             // 
-            this.textBox7.Location = new System.Drawing.Point(100, 16);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(358, 20);
-            this.textBox7.TabIndex = 3;
+            this.button1.Location = new System.Drawing.Point(19, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Buscar RUC";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.mostrar);
+            // 
+            // textBoxBuscar
+            // 
+            this.textBoxBuscar.Location = new System.Drawing.Point(119, 15);
+            this.textBoxBuscar.Name = "textBoxBuscar";
+            this.textBoxBuscar.Size = new System.Drawing.Size(227, 20);
+            this.textBoxBuscar.TabIndex = 3;
             // 
             // panel6
             // 
@@ -335,27 +356,6 @@
             this.label1.Text = "Crear Empresa";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(19, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.mostrar);
-            // 
-            // dataGridViewLista
-            // 
-            this.dataGridViewLista.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridViewLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewLista.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewLista.Name = "dataGridViewLista";
-            this.dataGridViewLista.Size = new System.Drawing.Size(382, 345);
-            this.dataGridViewLista.TabIndex = 0;
-            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,6 +368,7 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -377,7 +378,6 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -406,7 +406,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button buttonRegistrar;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBoxBuscar;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox textBoxMes;
         private System.Windows.Forms.Label labelMes;
