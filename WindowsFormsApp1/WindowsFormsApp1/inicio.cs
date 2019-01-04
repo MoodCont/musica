@@ -91,7 +91,12 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Hay campos sin llenar");
             }
+
         }
-        
+        private void mostrar(object sender, EventArgs e)
+        {
+            ConectionEmpresas CE = new ConectionEmpresas();
+            CE.Values(dataGridViewLista);
+        }
     }
 }
