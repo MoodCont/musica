@@ -105,5 +105,10 @@ namespace WindowsFormsApp1
             obj.Visible = true;
             Visible = false;
         }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
