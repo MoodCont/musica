@@ -121,23 +121,20 @@
   <data name="reportes-encuestas-de-satisfaccion-tour-evaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reportes-encuestas-de-satisfaccion-tour-evaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="filesystems_thefolder_649" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\filesystems_thefolder_649.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="11accounting_102063" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11accounting_102063.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2d4e09879b6f017f74ffaee0b0011c0a-icono-del-ojo-by-vexels" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2d4e09879b6f017f74ffaee0b0011c0a-icono-del-ojo-by-vexels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="descarga" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\descarga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="reportes-encuestas-de-satisfaccion-tour-evaa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reportes-encuestas-de-satisfaccion-tour-evaa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="formulario-inicio-sesion-usuario-diseno-plantilla-ui-forma-hexagonal_1017-10251" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\formulario-inicio-sesion-usuario-diseno-plantilla-ui-forma-hexagonal_1017-10251.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="descarga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3507749-account-balance-bank-business-finance-iconoteka-money_107683" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3507749-account-balance-bank-business-finance-iconoteka-money_107683.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="filesystems_thefolder_649" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filesystems_thefolder_649.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CustomLoginForms_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CustomLoginForms_03.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,7 +145,13 @@
   <data name="bars_data_graph_report_business_icon-icons.com_59970" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bars_data_graph_report_business_icon-icons.com_59970.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="11accounting_102063" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\11accounting_102063.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="formulario-inicio-sesion-usuario-diseno-plantilla-ui-forma-hexagonal_1017-10251" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formulario-inicio-sesion-usuario-diseno-plantilla-ui-forma-hexagonal_1017-10251.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3507749-account-balance-bank-business-finance-iconoteka-money_107683" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3507749-account-balance-bank-business-finance-iconoteka-money_107683.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="f38bfb47e0d4bf986a6e92d86ec254f2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\f38bfb47e0d4bf986a6e92d86ec254f2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -98,5 +98,12 @@ namespace WindowsFormsApp1
             ConectionEmpresas CE = new ConectionEmpresas();
             CE.Values(dataGridViewLista);
         }
+
+        private void buttonPrueba_Click(object sender, EventArgs e)
+        {
+            Form2 obj = new Form2();
+            obj.Visible = true;
+            Visible = false;
+        }
     }
 }
