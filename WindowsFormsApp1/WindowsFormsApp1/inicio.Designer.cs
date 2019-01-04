@@ -34,7 +34,7 @@
             this.dataGridViewLista = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBoxBuscar = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -57,7 +57,6 @@
             this.labelNombre = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonPrueba = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -117,7 +116,7 @@
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.button1);
-            this.panel7.Controls.Add(this.textBox7);
+            this.panel7.Controls.Add(this.textBoxBuscar);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 63);
             this.panel7.Name = "panel7";
@@ -128,19 +127,18 @@
             // 
             this.button1.Location = new System.Drawing.Point(19, 14);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(85, 23);
             this.button1.TabIndex = 14;
-            this.button1.Text = "Buscar";
+            this.button1.Text = "Buscar RUC";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.mostrar);
             // 
-            // textBox7
+            // textBoxBuscar
             // 
-            this.textBox7.Location = new System.Drawing.Point(100, 16);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(358, 20);
-            this.textBox7.TabIndex = 3;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.textBoxBuscar.Location = new System.Drawing.Point(119, 15);
+            this.textBoxBuscar.Name = "textBoxBuscar";
+            this.textBoxBuscar.Size = new System.Drawing.Size(227, 20);
+            this.textBoxBuscar.TabIndex = 3;
             // 
             // panel6
             // 
@@ -177,7 +175,6 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.buttonPrueba);
             this.panel5.Controls.Add(this.labelMes);
             this.panel5.Controls.Add(this.labelAnio);
             this.panel5.Controls.Add(this.textBoxMes);
@@ -359,16 +356,6 @@
             this.label1.Text = "Crear Empresa";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // buttonPrueba
-            // 
-            this.buttonPrueba.Location = new System.Drawing.Point(369, 284);
-            this.buttonPrueba.Name = "buttonPrueba";
-            this.buttonPrueba.Size = new System.Drawing.Size(75, 23);
-            this.buttonPrueba.TabIndex = 18;
-            this.buttonPrueba.Text = "Prueba";
-            this.buttonPrueba.UseVisualStyleBackColor = true;
-            this.buttonPrueba.Click += new System.EventHandler(this.buttonPrueba_Click);
-            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -419,13 +406,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button buttonRegistrar;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBoxBuscar;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox textBoxMes;
         private System.Windows.Forms.Label labelMes;
         private System.Windows.Forms.Label labelAnio;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridViewLista;
-        private System.Windows.Forms.Button buttonPrueba;
     }
 }

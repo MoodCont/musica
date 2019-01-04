@@ -37,7 +37,7 @@ namespace WindowsFormsApp1
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Campo de Año debe ser un número");
+                    MessageBox.Show("Campo de Año debe ser un número" + ex.ToString());
                     pAnio = -1;
                 }
             }
@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Campo de Mes debe ser un número");
+                    MessageBox.Show("Campo de Mes debe ser un número"+ex.ToString());
                     pMes = -1;
                 }
             }
@@ -86,6 +86,13 @@ namespace WindowsFormsApp1
                 {
                     string respuesta = CE.insert(textBoxRUC.Text, textBoxNombre.Text, int.Parse(textBoxAnio.Text), int.Parse(textBoxMes.Text), textBoxDireccion.Text, textBoxRegimenTri.Text, textBoxLibrosElectronicos.Text);
                     MessageBox.Show(respuesta);
+                    textBoxAnio.Text = "";
+                    textBoxMes.Text = "";
+                    textBoxNombre.Text = "";
+                    textBoxRegimenTri.Text = "";
+                    textBoxRUC.Text = "";
+                    textBoxLibrosElectronicos.Text = "";
+                    textBoxDireccion.Text = "";
                 }
                 else
                 {
@@ -101,9 +108,16 @@ namespace WindowsFormsApp1
         private void mostrar(object sender, EventArgs e)
         {
             ConectionEmpresas CE = new ConectionEmpresas();
-            CE.Values(dataGridViewLista);
+            if (textBoxBuscar.Text == "")
+            {
+                CE.Values(dataGridViewLista);
+            }
+            else
+            {
+                string buscar = textBoxBuscar.Text;
+                CE.search(buscar,dataGridViewLista);
+            }
         }
-
         private void buttonPrueba_Click(object sender, EventArgs e)
         {
             Mood obj = new Mood();

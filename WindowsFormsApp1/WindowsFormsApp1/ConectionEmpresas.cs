@@ -20,15 +20,15 @@ namespace WindowsFormsApp1
         //Verifica conexion
         public void conectar()
         {
-            string ruta="Data Source=192.168.0.101,1433;Initial Catalog= moodCont;user id=marcoConection;password=Conection";
+            string ruta= "Data Source=DARKPEARL\\SQLEXPRESS01;Initial Catalog= moodCont;integrated security=true";
             SConection = new SqlConnection(ruta);
+            SConection.Open();
         }
         public void conectionEmpresas()
         {
             try
             {
                 conectar();
-                SConection.Open();
                 MessageBox.Show("conectado");
             }
             catch(Exception ex){
@@ -80,6 +80,21 @@ namespace WindowsFormsApp1
                 DGV.DataSource = dataTable;
             }
             catch(Exception ex)
+            {
+                MessageBox.Show("no se pudo mostrar " + ex.ToString());
+            }
+        }
+        public void search(string RUC,DataGridView DGV)
+        {
+            try
+            {
+                conectar();
+                dataSet = new SqlDataAdapter("SELECT * FROM Empresas Where RUC='" + RUC + "'", SConection);
+                dataTable = new DataTable();
+                dataSet.Fill(dataTable);
+                DGV.DataSource = dataTable;
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("no se pudo mostrar " + ex.ToString());
             }

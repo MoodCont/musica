@@ -48,17 +48,41 @@
   <ItemGroup>
     <Compile Include="ConectionEmpresas.cs" />
     <Compile Include="ConectionUsuarios.cs" />
+    <Compile Include="Mood_Asientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mood_Asientos.Designer.cs">
+      <DependentUpon>Mood_Asientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mood_Cuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mood_Cuentas.Designer.cs">
+      <DependentUpon>Mood_Cuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mood_Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mood_Reportes.Designer.cs">
+      <DependentUpon>Mood_Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mood_SubSistemas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mood_SubSistemas.Designer.cs">
+      <DependentUpon>Mood_SubSistemas.cs</DependentUpon>
+    </Compile>
     <Compile Include="SingUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SingUp.Designer.cs">
       <DependentUpon>SingUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Mood.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Mood.Designer.cs">
+      <DependentUpon>Mood.cs</DependentUpon>
     </Compile>
     <Compile Include="inicio.cs">
       <SubType>Form</SubType>
@@ -68,11 +92,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Mood_Asientos.resx">
+      <DependentUpon>Mood_Asientos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SingUp.resx">
       <DependentUpon>SingUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Mood.resx">
+      <DependentUpon>Mood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>

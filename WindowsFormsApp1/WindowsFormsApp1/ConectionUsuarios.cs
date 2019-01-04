@@ -15,8 +15,9 @@ namespace WindowsFormsApp1
         SqlConnection SConection;
         public void conectar()
         {
-            string ruta = "Data Source=192.168.0.101,1433;Initial Catalog= moodCont;user id=marcoConection;password=Conection";
+            string ruta = "Data Source=DARKPEARL\\SQLEXPRESS01;Initial Catalog= moodCont;integrated security=true";
             SConection = new SqlConnection(ruta);
+            SConection.Open();
         }
         public int Validate(string usuario,string password)
         {
@@ -24,7 +25,6 @@ namespace WindowsFormsApp1
             try
             {
                 conectar();
-                SConection.Open();
                 cmd = new SqlCommand("SELECT * FROM usuarios  where usuario='"+usuario+"'and pwd='"+password+"'",SConection);
                 reader = cmd.ExecuteReader();
                 while (reader.Read())
