@@ -368,6 +368,7 @@
             this.buttonIngresarRUC.TabIndex = 15;
             this.buttonIngresarRUC.Text = "Ingresar RUC";
             this.buttonIngresarRUC.UseVisualStyleBackColor = true;
+            this.buttonIngresarRUC.Click += new System.EventHandler(this.buttonIngresarRUC_Click);
             // 
             // textBoxIngresarRUC
             // 

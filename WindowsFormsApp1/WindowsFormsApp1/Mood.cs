@@ -16,14 +16,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (panelSubMenuAsientos.Visible == true) { panelSubMenuAsientos.Visible = false; }
-            else { panelSubMenuAsientos.Visible = true; }
-        }
-
-        
         
     }
 }

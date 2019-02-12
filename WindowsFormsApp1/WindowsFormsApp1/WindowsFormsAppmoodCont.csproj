@@ -95,6 +95,9 @@
     <EmbeddedResource Include="Mood_Asientos.resx">
       <DependentUpon>Mood_Asientos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mood_Reportes.resx">
+      <DependentUpon>Mood_Reportes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SingUp.resx">
       <DependentUpon>SingUp.cs</DependentUpon>
     </EmbeddedResource>
