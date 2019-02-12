@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStripBarraTareas = new System.Windows.Forms.MenuStrip();
             this.ingresoDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planDeCuentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoDeAsientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,21 +81,21 @@
             this.ingresoDeDocumentosDeIdentidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoDeTipoDeCambioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaDeTablasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.menuStripBarraTareas.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStripBarraTareas
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStripBarraTareas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresoDeDatosToolStripMenuItem,
             this.reportesToolStripMenuItem,
             this.subSistemasSUNATToolStripMenuItem,
             this.adicionalesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(884, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStripBarraTareas.Location = new System.Drawing.Point(0, 0);
+            this.menuStripBarraTareas.Name = "menuStripBarraTareas";
+            this.menuStripBarraTareas.Size = new System.Drawing.Size(884, 24);
+            this.menuStripBarraTareas.TabIndex = 0;
+            this.menuStripBarraTareas.Text = "menuStrip1";
             // 
             // ingresoDeDatosToolStripMenuItem
             // 
@@ -474,11 +474,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(884, 461);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStripBarraTareas);
             this.Name = "Mood";
-            this.Text = "Form2";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Text = "MOOD";
+            this.menuStripBarraTareas.ResumeLayout(false);
+            this.menuStripBarraTareas.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,7 +487,7 @@
         #endregion
 
         private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStripBarraTareas;
         private System.Windows.Forms.ToolStripMenuItem ingresoDeDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem planDeCuentasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresoDeAsientosToolStripMenuItem;

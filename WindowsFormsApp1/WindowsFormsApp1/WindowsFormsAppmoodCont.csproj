@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +47,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConectionEmpresas.cs" />
@@ -71,6 +75,12 @@
     </Compile>
     <Compile Include="Mood_SubSistemas.Designer.cs">
       <DependentUpon>Mood_SubSistemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanDeCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanDeCuentas.Designer.cs">
+      <DependentUpon>PlanDeCuentas.cs</DependentUpon>
     </Compile>
     <Compile Include="SingUp.cs">
       <SubType>Form</SubType>
