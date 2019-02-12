@@ -71,13 +71,13 @@ namespace WindowsFormsApp1
         private void mostrar(object sender, EventArgs e)
         {
             ConectionEmpresas CE = new ConectionEmpresas();
-            if (textBoxBuscar.Text == "")
+            if (textBoxBuscarRUC.Text == "")
             {
                 CE.Values(dataGridViewLista);
             }
             else
             {
-                string buscar = textBoxBuscar.Text;
+                string buscar = textBoxBuscarRUC.Text;
                 CE.search(buscar,dataGridViewLista);
             }
         }

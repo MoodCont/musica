@@ -33,8 +33,8 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.dataGridViewLista = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBoxBuscar = new System.Windows.Forms.TextBox();
+            this.buttonBuscarRUC = new System.Windows.Forms.Button();
+            this.textBoxBuscarRUC = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -57,6 +57,8 @@
             this.labelNombre = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonIngresarRUC = new System.Windows.Forms.Button();
+            this.textBoxIngresarRUC = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -75,7 +77,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 461);
+            this.panel1.Size = new System.Drawing.Size(994, 461);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -86,7 +88,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(500, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(384, 461);
+            this.panel3.Size = new System.Drawing.Size(494, 461);
             this.panel3.TabIndex = 1;
             // 
             // panel8
@@ -97,7 +99,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(0, 114);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(384, 347);
+            this.panel8.Size = new System.Drawing.Size(494, 347);
             this.panel8.TabIndex = 2;
             // 
             // dataGridViewLista
@@ -108,37 +110,39 @@
             this.dataGridViewLista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewLista.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewLista.Name = "dataGridViewLista";
-            this.dataGridViewLista.Size = new System.Drawing.Size(382, 345);
+            this.dataGridViewLista.Size = new System.Drawing.Size(492, 345);
             this.dataGridViewLista.TabIndex = 0;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.button1);
-            this.panel7.Controls.Add(this.textBoxBuscar);
+            this.panel7.Controls.Add(this.textBoxIngresarRUC);
+            this.panel7.Controls.Add(this.buttonIngresarRUC);
+            this.panel7.Controls.Add(this.buttonBuscarRUC);
+            this.panel7.Controls.Add(this.textBoxBuscarRUC);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 63);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(384, 51);
+            this.panel7.Size = new System.Drawing.Size(494, 51);
             this.panel7.TabIndex = 1;
             // 
-            // button1
+            // buttonBuscarRUC
             // 
-            this.button1.Location = new System.Drawing.Point(19, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Buscar RUC";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.mostrar);
+            this.buttonBuscarRUC.Location = new System.Drawing.Point(19, 15);
+            this.buttonBuscarRUC.Name = "buttonBuscarRUC";
+            this.buttonBuscarRUC.Size = new System.Drawing.Size(85, 23);
+            this.buttonBuscarRUC.TabIndex = 14;
+            this.buttonBuscarRUC.Text = "Buscar RUC";
+            this.buttonBuscarRUC.UseVisualStyleBackColor = true;
+            this.buttonBuscarRUC.Click += new System.EventHandler(this.mostrar);
             // 
-            // textBoxBuscar
+            // textBoxBuscarRUC
             // 
-            this.textBoxBuscar.Location = new System.Drawing.Point(119, 15);
-            this.textBoxBuscar.Name = "textBoxBuscar";
-            this.textBoxBuscar.Size = new System.Drawing.Size(227, 20);
-            this.textBoxBuscar.TabIndex = 3;
+            this.textBoxBuscarRUC.Location = new System.Drawing.Point(119, 15);
+            this.textBoxBuscarRUC.Name = "textBoxBuscarRUC";
+            this.textBoxBuscarRUC.Size = new System.Drawing.Size(227, 20);
+            this.textBoxBuscarRUC.TabIndex = 3;
             // 
             // panel6
             // 
@@ -148,7 +152,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(384, 63);
+            this.panel6.Size = new System.Drawing.Size(494, 63);
             this.panel6.TabIndex = 0;
             // 
             // label8
@@ -356,12 +360,28 @@
             this.label1.Text = "Crear Empresa";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // buttonIngresarRUC
+            // 
+            this.buttonIngresarRUC.Location = new System.Drawing.Point(363, 15);
+            this.buttonIngresarRUC.Name = "buttonIngresarRUC";
+            this.buttonIngresarRUC.Size = new System.Drawing.Size(79, 23);
+            this.buttonIngresarRUC.TabIndex = 15;
+            this.buttonIngresarRUC.Text = "Ingresar RUC";
+            this.buttonIngresarRUC.UseVisualStyleBackColor = true;
+            // 
+            // textBoxIngresarRUC
+            // 
+            this.textBoxIngresarRUC.Location = new System.Drawing.Point(457, 15);
+            this.textBoxIngresarRUC.Name = "textBoxIngresarRUC";
+            this.textBoxIngresarRUC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIngresarRUC.TabIndex = 16;
+            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(884, 461);
+            this.ClientSize = new System.Drawing.Size(994, 461);
             this.Controls.Add(this.panel1);
             this.Name = "inicio";
             this.Text = "inicio";
@@ -406,12 +426,14 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button buttonRegistrar;
-        private System.Windows.Forms.TextBox textBoxBuscar;
+        private System.Windows.Forms.TextBox textBoxBuscarRUC;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox textBoxMes;
         private System.Windows.Forms.Label labelMes;
         private System.Windows.Forms.Label labelAnio;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonBuscarRUC;
         private System.Windows.Forms.DataGridView dataGridViewLista;
+        private System.Windows.Forms.Button buttonIngresarRUC;
+        private System.Windows.Forms.TextBox textBoxIngresarRUC;
     }
 }
