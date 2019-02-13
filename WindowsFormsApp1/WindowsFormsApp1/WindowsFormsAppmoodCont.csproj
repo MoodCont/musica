@@ -108,6 +108,9 @@
     <EmbeddedResource Include="Mood_Reportes.resx">
       <DependentUpon>Mood_Reportes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PlanDeCuentas.resx">
+      <DependentUpon>PlanDeCuentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SingUp.resx">
       <DependentUpon>SingUp.cs</DependentUpon>
     </EmbeddedResource>
