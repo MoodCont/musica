@@ -116,7 +116,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
             "Activo",
-            "Inactivo"});
+            "Pasivo"});
             this.listBox1.Location = new System.Drawing.Point(10, 230);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 17);
