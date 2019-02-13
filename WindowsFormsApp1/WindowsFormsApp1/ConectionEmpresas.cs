@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         //Verifica conexion
         public void conectar()
         {
-            string ruta= "Data Source=DARKPEARL\\SQLEXPRESS01;Initial Catalog= moodCont;integrated security=t";
+            string ruta= "Data Source=DARKPEARL\\SQLEXPRESS01;Initial Catalog= moodCont;integrated security=true";
             //asdasdasdaasdasdasd
             SConection = new SqlConnection(ruta);
             SConection.Open();
