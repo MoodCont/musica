@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             this.panelPlanDeCuentas = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.labelPlanDeCuentas = new System.Windows.Forms.Label();
             this.panelAgregarPlanDeCuentas = new System.Windows.Forms.Panel();
+            this.labelEstructuraCodigoCuenta = new System.Windows.Forms.Label();
+            this.buttonGrabarPlanCuentas = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.labelClase = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -38,28 +41,36 @@
             this.textBoxCodigoCuenta = new System.Windows.Forms.TextBox();
             this.labelCodigoCuenta = new System.Windows.Forms.Label();
             this.labelAgregarPlanDeCuentas = new System.Windows.Forms.Label();
-            this.buttonGrabarPlanCuentas = new System.Windows.Forms.Button();
-            this.labelEstructuraCodigoCuenta = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panelPlanCuentasTitulo = new System.Windows.Forms.Panel();
             this.panelPlanDeCuentas.SuspendLayout();
-            this.panelAgregarPlanDeCuentas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelAgregarPlanDeCuentas.SuspendLayout();
+            this.panelPlanCuentasTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelPlanDeCuentas
             // 
+            this.panelPlanDeCuentas.Controls.Add(this.panelPlanCuentasTitulo);
             this.panelPlanDeCuentas.Controls.Add(this.dataGridView1);
-            this.panelPlanDeCuentas.Controls.Add(this.labelPlanDeCuentas);
             this.panelPlanDeCuentas.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelPlanDeCuentas.Location = new System.Drawing.Point(0, 0);
             this.panelPlanDeCuentas.Name = "panelPlanDeCuentas";
             this.panelPlanDeCuentas.Size = new System.Drawing.Size(523, 450);
             this.panelPlanDeCuentas.TabIndex = 0;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(523, 450);
+            this.dataGridView1.TabIndex = 1;
+            // 
             // labelPlanDeCuentas
             // 
             this.labelPlanDeCuentas.AutoSize = true;
-            this.labelPlanDeCuentas.Location = new System.Drawing.Point(209, 9);
+            this.labelPlanDeCuentas.Location = new System.Drawing.Point(211, 10);
             this.labelPlanDeCuentas.Name = "labelPlanDeCuentas";
             this.labelPlanDeCuentas.Size = new System.Drawing.Size(87, 13);
             this.labelPlanDeCuentas.TabIndex = 0;
@@ -81,6 +92,24 @@
             this.panelAgregarPlanDeCuentas.Name = "panelAgregarPlanDeCuentas";
             this.panelAgregarPlanDeCuentas.Size = new System.Drawing.Size(277, 450);
             this.panelAgregarPlanDeCuentas.TabIndex = 1;
+            // 
+            // labelEstructuraCodigoCuenta
+            // 
+            this.labelEstructuraCodigoCuenta.AutoSize = true;
+            this.labelEstructuraCodigoCuenta.Location = new System.Drawing.Point(126, 60);
+            this.labelEstructuraCodigoCuenta.Name = "labelEstructuraCodigoCuenta";
+            this.labelEstructuraCodigoCuenta.Size = new System.Drawing.Size(139, 13);
+            this.labelEstructuraCodigoCuenta.TabIndex = 9;
+            this.labelEstructuraCodigoCuenta.Text = "Estructura: XX-X-X-X-XX-XX";
+            // 
+            // buttonGrabarPlanCuentas
+            // 
+            this.buttonGrabarPlanCuentas.Location = new System.Drawing.Point(20, 380);
+            this.buttonGrabarPlanCuentas.Name = "buttonGrabarPlanCuentas";
+            this.buttonGrabarPlanCuentas.Size = new System.Drawing.Size(75, 23);
+            this.buttonGrabarPlanCuentas.TabIndex = 8;
+            this.buttonGrabarPlanCuentas.Text = "Grabar";
+            this.buttonGrabarPlanCuentas.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
@@ -143,32 +172,14 @@
             this.labelAgregarPlanDeCuentas.TabIndex = 1;
             this.labelAgregarPlanDeCuentas.Text = "Agregar Plan De Cuentas";
             // 
-            // buttonGrabarPlanCuentas
+            // panelPlanCuentasTitulo
             // 
-            this.buttonGrabarPlanCuentas.Location = new System.Drawing.Point(20, 380);
-            this.buttonGrabarPlanCuentas.Name = "buttonGrabarPlanCuentas";
-            this.buttonGrabarPlanCuentas.Size = new System.Drawing.Size(75, 23);
-            this.buttonGrabarPlanCuentas.TabIndex = 8;
-            this.buttonGrabarPlanCuentas.Text = "Grabar";
-            this.buttonGrabarPlanCuentas.UseVisualStyleBackColor = true;
-            // 
-            // labelEstructuraCodigoCuenta
-            // 
-            this.labelEstructuraCodigoCuenta.AutoSize = true;
-            this.labelEstructuraCodigoCuenta.Location = new System.Drawing.Point(126, 60);
-            this.labelEstructuraCodigoCuenta.Name = "labelEstructuraCodigoCuenta";
-            this.labelEstructuraCodigoCuenta.Size = new System.Drawing.Size(139, 13);
-            this.labelEstructuraCodigoCuenta.TabIndex = 9;
-            this.labelEstructuraCodigoCuenta.Text = "Estructura: XX-X-X-X-XX-XX";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 25);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(523, 425);
-            this.dataGridView1.TabIndex = 1;
+            this.panelPlanCuentasTitulo.Controls.Add(this.labelPlanDeCuentas);
+            this.panelPlanCuentasTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelPlanCuentasTitulo.Location = new System.Drawing.Point(0, 0);
+            this.panelPlanCuentasTitulo.Name = "panelPlanCuentasTitulo";
+            this.panelPlanCuentasTitulo.Size = new System.Drawing.Size(523, 47);
+            this.panelPlanCuentasTitulo.TabIndex = 2;
             // 
             // PlanDeCuentas
             // 
@@ -181,10 +192,11 @@
             this.Name = "PlanDeCuentas";
             this.Text = "PlanDeCuentas";
             this.panelPlanDeCuentas.ResumeLayout(false);
-            this.panelPlanDeCuentas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelAgregarPlanDeCuentas.ResumeLayout(false);
             this.panelAgregarPlanDeCuentas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panelPlanCuentasTitulo.ResumeLayout(false);
+            this.panelPlanCuentasTitulo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -204,5 +216,6 @@
         private System.Windows.Forms.Label labelEstructuraCodigoCuenta;
         private System.Windows.Forms.Button buttonGrabarPlanCuentas;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panelPlanCuentasTitulo;
     }
 }
