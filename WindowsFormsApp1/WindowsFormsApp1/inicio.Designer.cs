@@ -33,6 +33,8 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.dataGridViewLista = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.textBoxIngresarRUC = new System.Windows.Forms.TextBox();
+            this.buttonIngresarRUC = new System.Windows.Forms.Button();
             this.buttonBuscarRUC = new System.Windows.Forms.Button();
             this.textBoxBuscarRUC = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -57,8 +59,6 @@
             this.labelNombre = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonIngresarRUC = new System.Windows.Forms.Button();
-            this.textBoxIngresarRUC = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -126,6 +126,23 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(494, 51);
             this.panel7.TabIndex = 1;
+            // 
+            // textBoxIngresarRUC
+            // 
+            this.textBoxIngresarRUC.Location = new System.Drawing.Point(457, 15);
+            this.textBoxIngresarRUC.Name = "textBoxIngresarRUC";
+            this.textBoxIngresarRUC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIngresarRUC.TabIndex = 16;
+            // 
+            // buttonIngresarRUC
+            // 
+            this.buttonIngresarRUC.Location = new System.Drawing.Point(363, 15);
+            this.buttonIngresarRUC.Name = "buttonIngresarRUC";
+            this.buttonIngresarRUC.Size = new System.Drawing.Size(79, 23);
+            this.buttonIngresarRUC.TabIndex = 15;
+            this.buttonIngresarRUC.Text = "Ingresar RUC";
+            this.buttonIngresarRUC.UseVisualStyleBackColor = true;
+            this.buttonIngresarRUC.Click += new System.EventHandler(this.buttonIngresarRUC_Click);
             // 
             // buttonBuscarRUC
             // 
@@ -360,23 +377,6 @@
             this.label1.Text = "Crear Empresa";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // buttonIngresarRUC
-            // 
-            this.buttonIngresarRUC.Location = new System.Drawing.Point(363, 15);
-            this.buttonIngresarRUC.Name = "buttonIngresarRUC";
-            this.buttonIngresarRUC.Size = new System.Drawing.Size(79, 23);
-            this.buttonIngresarRUC.TabIndex = 15;
-            this.buttonIngresarRUC.Text = "Ingresar RUC";
-            this.buttonIngresarRUC.UseVisualStyleBackColor = true;
-            this.buttonIngresarRUC.Click += new System.EventHandler(this.buttonIngresarRUC_Click);
-            // 
-            // textBoxIngresarRUC
-            // 
-            this.textBoxIngresarRUC.Location = new System.Drawing.Point(457, 15);
-            this.textBoxIngresarRUC.Name = "textBoxIngresarRUC";
-            this.textBoxIngresarRUC.Size = new System.Drawing.Size(100, 20);
-            this.textBoxIngresarRUC.TabIndex = 16;
-            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -386,6 +386,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "inicio";
             this.Text = "inicio";
+            this.Load += new System.EventHandler(this.inicio_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel8.ResumeLayout(false);

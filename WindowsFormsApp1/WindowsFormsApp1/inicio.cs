@@ -97,5 +97,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void inicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
