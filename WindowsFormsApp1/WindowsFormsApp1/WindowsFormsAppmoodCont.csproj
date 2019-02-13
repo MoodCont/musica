@@ -123,6 +123,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="IngresarAsiento.resx">
+      <DependentUpon>IngresarAsiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mood_Asientos.resx">
       <DependentUpon>Mood_Asientos.cs</DependentUpon>
     </EmbeddedResource>
