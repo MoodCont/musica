@@ -226,6 +226,7 @@
             this.registroDeVentasToolStripMenuItem.Name = "registroDeVentasToolStripMenuItem";
             this.registroDeVentasToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
             this.registroDeVentasToolStripMenuItem.Text = "Registro de Ventas";
+            this.registroDeVentasToolStripMenuItem.Click += new System.EventHandler(this.registroDeVentasToolStripMenuItem_Click);
             // 
             // registroDeComprasToolStripMenuItem
             // 
@@ -297,7 +298,7 @@
             this.libroMayorToolStripMenuItem1,
             this.planDeCuentasLDToolStripMenuItem});
             this.pLEToolStripMenuItem.Name = "pLEToolStripMenuItem";
-            this.pLEToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pLEToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.pLEToolStripMenuItem.Text = "P.L.E.";
             // 
             // registroDeVentasToolStripMenuItem1
@@ -355,7 +356,7 @@
             this.anualToolStripMenuItem,
             this.dAOTToolStripMenuItem});
             this.declaracionesToolStripMenuItem.Name = "declaracionesToolStripMenuItem";
-            this.declaracionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.declaracionesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.declaracionesToolStripMenuItem.Text = "Declaraciones";
             // 
             // mensualesToolStripMenuItem
@@ -405,7 +406,7 @@
             this.registroDeVentasPasaportesToolStripMenuItem,
             this.registroDeComprasToolStripMenuItem1});
             this.pDBToolStripMenuItem.Name = "pDBToolStripMenuItem";
-            this.pDBToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pDBToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.pDBToolStripMenuItem.Text = "P.D.B.";
             // 
             // registroDeVentasToolStripMenuItem2
@@ -466,7 +467,7 @@
             // 
             this.consultaDeTablasToolStripMenuItem.Name = "consultaDeTablasToolStripMenuItem";
             this.consultaDeTablasToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
-            this.consultaDeTablasToolStripMenuItem.Text = "Consulta de Tablas"; 
+            this.consultaDeTablasToolStripMenuItem.Text = "Consulta de Tablas";
             // 
             // Mood
             // 
@@ -476,7 +477,7 @@
             this.ClientSize = new System.Drawing.Size(884, 461);
             this.Controls.Add(this.menuStripBarraTareas);
             this.Name = "Mood";
-            this.Text = "MOOD";
+            this.Text = "MOOD ";
             this.menuStripBarraTareas.ResumeLayout(false);
             this.menuStripBarraTareas.PerformLayout();
             this.ResumeLayout(false);

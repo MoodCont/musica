@@ -94,9 +94,26 @@ namespace WindowsFormsApp1
 
         private void buttonIngresarRUC_Click(object sender, EventArgs e)
         {
-
+            ConectionEmpresas CE = new ConectionEmpresas();
+            if (textBoxIngresarRUC.Text == "")
+            {
+                MessageBox.Show("Ingrese RUC");
+            }
+            else
+            {
+                int rep=CE.searchPlanContable(textBoxIngresarRUC.Text);
+                if (rep == 0)
+                {
+                    MessageBox.Show("No existe");
+                }
+                else
+                {
+                    Mood mood = new Mood();
+                    mood.Visible = true;
+                    Visible = false;
+                }
+            }
         }
-
         private void inicio_Load(object sender, EventArgs e)
         {
 

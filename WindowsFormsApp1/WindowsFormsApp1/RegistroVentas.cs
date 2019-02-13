@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Mood : Form
+    public partial class RegistroVentas : Form
     {
-        public Mood()
+        public RegistroVentas()
         {
             InitializeComponent();
-        }
-
-        private void registroDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            RegistroVentas registro = new RegistroVentas();
-            registro.Visible = true;
-            Visible=false;
         }
     }
 }
