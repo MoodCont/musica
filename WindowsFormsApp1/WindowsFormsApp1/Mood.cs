@@ -16,12 +16,28 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
-        private void registroDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        //creando funcion para abrir un formulario dentro de otro
+        private void AbrirFormulario(object FormularioHijo)
         {
-            RegistroVentas registro = new RegistroVentas();
-            registro.Visible = true;
-            Visible=false;
+            if (this.panelMoodPrincipal.Controls.Count > 0)
+                this.panelMoodPrincipal.Controls.RemoveAt(0);
+            Form formulario = FormularioHijo as Form;
+            formulario.TopLevel = false;
+            formulario.Dock = DockStyle.Fill;
+            this.panelMoodPrincipal.Controls.Add(formulario);
+            this.panelMoodPrincipal.Tag = formulario;
+            formulario.Show();
+        }
+        //fin
+
+        private void Mood_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void planDeCuentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new PlanDeCuentas());
         }
     }
 }

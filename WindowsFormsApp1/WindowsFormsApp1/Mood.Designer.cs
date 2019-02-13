@@ -81,6 +81,7 @@
             this.ingresoDeDocumentosDeIdentidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoDeTipoDeCambioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaDeTablasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelMoodPrincipal = new System.Windows.Forms.Panel();
             this.menuStripBarraTareas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,6 +115,7 @@
             this.planDeCuentasToolStripMenuItem.Name = "planDeCuentasToolStripMenuItem";
             this.planDeCuentasToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.planDeCuentasToolStripMenuItem.Text = "Plan de Cuentas";
+            this.planDeCuentasToolStripMenuItem.Click += new System.EventHandler(this.planDeCuentasToolStripMenuItem_Click);
             // 
             // ingresoDeAsientosToolStripMenuItem
             // 
@@ -226,7 +228,6 @@
             this.registroDeVentasToolStripMenuItem.Name = "registroDeVentasToolStripMenuItem";
             this.registroDeVentasToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
             this.registroDeVentasToolStripMenuItem.Text = "Registro de Ventas";
-            this.registroDeVentasToolStripMenuItem.Click += new System.EventHandler(this.registroDeVentasToolStripMenuItem_Click);
             // 
             // registroDeComprasToolStripMenuItem
             // 
@@ -469,15 +470,25 @@
             this.consultaDeTablasToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
             this.consultaDeTablasToolStripMenuItem.Text = "Consulta de Tablas";
             // 
+            // panelMoodPrincipal
+            // 
+            this.panelMoodPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMoodPrincipal.Location = new System.Drawing.Point(0, 24);
+            this.panelMoodPrincipal.Name = "panelMoodPrincipal";
+            this.panelMoodPrincipal.Size = new System.Drawing.Size(884, 437);
+            this.panelMoodPrincipal.TabIndex = 1;
+            // 
             // Mood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.panelMoodPrincipal);
             this.Controls.Add(this.menuStripBarraTareas);
             this.Name = "Mood";
-            this.Text = "MOOD ";
+            this.Text = "MOOD";
+            this.Load += new System.EventHandler(this.Mood_Load);
             this.menuStripBarraTareas.ResumeLayout(false);
             this.menuStripBarraTareas.PerformLayout();
             this.ResumeLayout(false);
@@ -541,5 +552,6 @@
         private System.Windows.Forms.ToolStripMenuItem ingresoDeDocumentosDeIdentidadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresoDeTipoDeCambioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaDeTablasToolStripMenuItem;
+        private System.Windows.Forms.Panel panelMoodPrincipal;
     }
 }

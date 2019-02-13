@@ -97,12 +97,6 @@
     <Compile Include="PlanDeCuentas.Designer.cs">
       <DependentUpon>PlanDeCuentas.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistroVentas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegistroVentas.Designer.cs">
-      <DependentUpon>RegistroVentas.cs</DependentUpon>
-    </Compile>
     <Compile Include="SingUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,8 +123,8 @@
     <EmbeddedResource Include="Mood_Reportes.resx">
       <DependentUpon>Mood_Reportes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistroVentas.resx">
-      <DependentUpon>RegistroVentas.cs</DependentUpon>
+    <EmbeddedResource Include="PlanDeCuentas.resx">
+      <DependentUpon>PlanDeCuentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SingUp.resx">
       <DependentUpon>SingUp.cs</DependentUpon>
