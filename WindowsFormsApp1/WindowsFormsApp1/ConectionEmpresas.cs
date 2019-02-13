@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         //Verifica conexion
         public void conectar()
         {
-            string ruta= "Data Source=192.168.0.101,1433;Initial Catalog= moodCont;user id=marcoConection;password=Conection";
+            string ruta= "Data Source=DARKPEARL\\SQLEXPRESS01;Initial Catalog= moodCont;integrated security=true";
             SConection = new SqlConnection(ruta);
             SConection.Open();
         }
@@ -43,6 +43,8 @@ namespace WindowsFormsApp1
             {
                 conectar();
                 cmd = new SqlCommand("Insert into Empresas(nombre,RUC,direccion,P_anio,P_mes,regimen_tributario,libros_electronicos) values('" + Nombre + "','" + RUC + "','" + direccion + "','" + anio + "','" + mes+ "','" + Regimen_tributario + "','" + libros_electronicos + "')", SConection);
+                cmd.ExecuteNonQuery();
+                cmd = new SqlCommand("insert into EmpresasPlanContable(RUC) values('" + RUC + "')", SConection);
                 cmd.ExecuteNonQuery();
             } catch (Exception ex) {
                 salida="no se inserto" + ex.ToString();
@@ -98,6 +100,26 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("no se pudo mostrar " + ex.ToString());
             }
+        }
+        public int searchPlanContable(string RUC)
+        {
+            int existe = 0;
+            try
+            {
+                conectar();
+                cmd = new SqlCommand("SELECT * FROM EmpresasPlanContable Where RUC='" + RUC + "'", SConection);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    existe++;
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("consulta fallida= " + ex.ToString());
+            }
+            return existe;
         }
     }
 }
