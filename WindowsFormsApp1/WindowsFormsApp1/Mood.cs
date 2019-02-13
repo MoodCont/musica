@@ -39,5 +39,10 @@ namespace WindowsFormsApp1
         {
             AbrirFormulario(new PlanDeCuentas());
         }
+
+        private void panelMoodPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

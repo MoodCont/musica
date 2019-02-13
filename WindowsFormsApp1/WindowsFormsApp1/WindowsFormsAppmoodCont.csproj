@@ -67,6 +67,12 @@
   <ItemGroup>
     <Compile Include="ConectionEmpresas.cs" />
     <Compile Include="ConectionUsuarios.cs" />
+    <Compile Include="IngresarAsiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarAsiento.Designer.cs">
+      <DependentUpon>IngresarAsiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mood_Asientos.cs">
       <SubType>Form</SubType>
     </Compile>

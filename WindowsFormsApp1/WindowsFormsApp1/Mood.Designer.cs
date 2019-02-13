@@ -299,7 +299,7 @@
             this.libroMayorToolStripMenuItem1,
             this.planDeCuentasLDToolStripMenuItem});
             this.pLEToolStripMenuItem.Name = "pLEToolStripMenuItem";
-            this.pLEToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.pLEToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pLEToolStripMenuItem.Text = "P.L.E.";
             // 
             // registroDeVentasToolStripMenuItem1
@@ -357,7 +357,7 @@
             this.anualToolStripMenuItem,
             this.dAOTToolStripMenuItem});
             this.declaracionesToolStripMenuItem.Name = "declaracionesToolStripMenuItem";
-            this.declaracionesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.declaracionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.declaracionesToolStripMenuItem.Text = "Declaraciones";
             // 
             // mensualesToolStripMenuItem
@@ -407,7 +407,7 @@
             this.registroDeVentasPasaportesToolStripMenuItem,
             this.registroDeComprasToolStripMenuItem1});
             this.pDBToolStripMenuItem.Name = "pDBToolStripMenuItem";
-            this.pDBToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.pDBToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pDBToolStripMenuItem.Text = "P.D.B.";
             // 
             // registroDeVentasToolStripMenuItem2
@@ -477,6 +477,7 @@
             this.panelMoodPrincipal.Name = "panelMoodPrincipal";
             this.panelMoodPrincipal.Size = new System.Drawing.Size(884, 437);
             this.panelMoodPrincipal.TabIndex = 1;
+            this.panelMoodPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMoodPrincipal_Paint);
             // 
             // Mood
             // 
