@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Mood : Form
+    public partial class PlanDeCuentas : Form
     {
-        public Mood()
+        public PlanDeCuentas()
         {
             InitializeComponent();
         }
-
-        
     }
 }
