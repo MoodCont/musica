@@ -181,6 +181,7 @@
             this.label8.Size = new System.Drawing.Size(198, 18);
             this.label8.TabIndex = 0;
             this.label8.Text = "Listado de Empresas";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel2
             // 

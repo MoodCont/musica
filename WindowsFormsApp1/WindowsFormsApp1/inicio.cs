@@ -27,7 +27,11 @@ namespace WindowsFormsApp1
                 textBoxRUC.Text = "";
             }
             if (textBoxRUC.Text == "") { validar = false; }
+
+
             if (textBoxDireccion.Text == "") { validar = false; }
+
+
             try
             {
                 int.Parse(textBoxAnio.Text);

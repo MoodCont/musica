@@ -73,18 +73,6 @@
     <Compile Include="IngresarAsiento.Designer.cs">
       <DependentUpon>IngresarAsiento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mood_Asientos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mood_Asientos.Designer.cs">
-      <DependentUpon>Mood_Asientos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mood_Cuentas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mood_Cuentas.Designer.cs">
-      <DependentUpon>Mood_Cuentas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Mood_Reportes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,9 +113,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="IngresarAsiento.resx">
       <DependentUpon>IngresarAsiento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mood_Asientos.resx">
-      <DependentUpon>Mood_Asientos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mood_Reportes.resx">
       <DependentUpon>Mood_Reportes.cs</DependentUpon>

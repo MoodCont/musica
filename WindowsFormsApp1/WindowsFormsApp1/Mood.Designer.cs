@@ -134,6 +134,7 @@
             this.ingresarAsientoToolStripMenuItem.Name = "ingresarAsientoToolStripMenuItem";
             this.ingresarAsientoToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.ingresarAsientoToolStripMenuItem.Text = "Ingresar Asiento";
+            this.ingresarAsientoToolStripMenuItem.Click += new System.EventHandler(this.ingresarAsientoToolStripMenuItem_Click);
             // 
             // revisarAsientoToolStripMenuItem
             // 
@@ -299,7 +300,7 @@
             this.libroMayorToolStripMenuItem1,
             this.planDeCuentasLDToolStripMenuItem});
             this.pLEToolStripMenuItem.Name = "pLEToolStripMenuItem";
-            this.pLEToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pLEToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.pLEToolStripMenuItem.Text = "P.L.E.";
             // 
             // registroDeVentasToolStripMenuItem1
@@ -357,7 +358,7 @@
             this.anualToolStripMenuItem,
             this.dAOTToolStripMenuItem});
             this.declaracionesToolStripMenuItem.Name = "declaracionesToolStripMenuItem";
-            this.declaracionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.declaracionesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.declaracionesToolStripMenuItem.Text = "Declaraciones";
             // 
             // mensualesToolStripMenuItem
@@ -407,7 +408,7 @@
             this.registroDeVentasPasaportesToolStripMenuItem,
             this.registroDeComprasToolStripMenuItem1});
             this.pDBToolStripMenuItem.Name = "pDBToolStripMenuItem";
-            this.pDBToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pDBToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.pDBToolStripMenuItem.Text = "P.D.B.";
             // 
             // registroDeVentasToolStripMenuItem2

@@ -42,7 +42,12 @@ namespace WindowsFormsApp1
 
         private void panelMoodPrincipal_Paint(object sender, PaintEventArgs e)
         {
+            
+        }
 
+        private void ingresarAsientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new IngresarAsiento());
         }
     }
 }
