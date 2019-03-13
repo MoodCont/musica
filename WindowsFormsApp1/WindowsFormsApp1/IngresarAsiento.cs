@@ -17,8 +17,24 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void buttonValidarTipoAsiento_Click(object sender, EventArgs e)
+        private void buttonGuardarIngresarAsiento_Click(object sender, EventArgs e)
         {
+            bool validar = true;
+            //crear el periodo
+            string periodo = "";
+            if( textBoxPeriodoAnio.Text.Length == 4 && textBoxPeriodoMes.Text.Length == 2)
+            {
+                periodo = textBoxPeriodoAnio.Text + textBoxPeriodoMes + "00";
+                MessageBox.Show(periodo);
+            }
+            else
+            {
+                MessageBox.Show("Periodo tiene formato incorrecto AAAA MM");
+                textBoxPeriodoAnio.Text = "";
+                textBoxPeriodoMes.Text = "";
+                validar = false;
+            }
+
 
         }
     }

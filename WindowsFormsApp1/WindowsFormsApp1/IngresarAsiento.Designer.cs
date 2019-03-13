@@ -33,6 +33,26 @@
             this.labeltituloIngresarAsiento = new System.Windows.Forms.Label();
             this.panelContenidoIngresarAsiento = new System.Windows.Forms.Panel();
             this.panelEstructuraAsiento = new System.Windows.Forms.Panel();
+            this.labelDenominacion = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.labelRUCProvedor = new System.Windows.Forms.Label();
+            this.textBoxTipoProvedor = new System.Windows.Forms.TextBox();
+            this.labelTipoProvedor = new System.Windows.Forms.Label();
+            this.labelTituloProvedor = new System.Windows.Forms.Label();
+            this.textBoxFechaVenciomiento = new System.Windows.Forms.TextBox();
+            this.textBoxFechaEmision = new System.Windows.Forms.TextBox();
+            this.labelFechaVencimientoDocumento = new System.Windows.Forms.Label();
+            this.labelFechaEmisionDocumento = new System.Windows.Forms.Label();
+            this.textBoxNumeroDocumento = new System.Windows.Forms.TextBox();
+            this.textBoxSerieDocumento = new System.Windows.Forms.TextBox();
+            this.labelNumeroDocumento = new System.Windows.Forms.Label();
+            this.labelSerieDocumento = new System.Windows.Forms.Label();
+            this.textBoxTipoDocumento = new System.Windows.Forms.TextBox();
+            this.labelTipoDocumento = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.labelTituloDocumento = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBoxNroAsiento = new System.Windows.Forms.TextBox();
             this.LabelNroAsiento = new System.Windows.Forms.Label();
             this.textBoxPeriodoMes = new System.Windows.Forms.TextBox();
@@ -44,27 +64,8 @@
             this.labelTipoLibro = new System.Windows.Forms.Label();
             this.textBoxSucursal = new System.Windows.Forms.TextBox();
             this.labelSucursal = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.labelTituloDocumento = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.labelTipoDocumento = new System.Windows.Forms.Label();
-            this.textBoxTipoDocumento = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.labelSerieDocumento = new System.Windows.Forms.Label();
-            this.labelNumeroDocumento = new System.Windows.Forms.Label();
-            this.textBoxSerieDocumento = new System.Windows.Forms.TextBox();
-            this.textBoxNumeroDocumento = new System.Windows.Forms.TextBox();
-            this.labelFechaEmisionDocumento = new System.Windows.Forms.Label();
-            this.labelFechaVencimientoDocumento = new System.Windows.Forms.Label();
-            this.textBoxFechaEmision = new System.Windows.Forms.TextBox();
-            this.textBoxFechaVenciomiento = new System.Windows.Forms.TextBox();
-            this.labelTituloProvedor = new System.Windows.Forms.Label();
-            this.labelTipoProvedor = new System.Windows.Forms.Label();
-            this.textBoxTipoProvedor = new System.Windows.Forms.TextBox();
-            this.labelRUCProvedor = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.labelDenominacion = new System.Windows.Forms.Label();
+            this.buttonGuardarIngresarAsiento = new System.Windows.Forms.Button();
             this.flowLayoutPanelTitulo.SuspendLayout();
             this.panelContenidoIngresarAsiento.SuspendLayout();
             this.panelEstructuraAsiento.SuspendLayout();
@@ -102,6 +103,7 @@
             // 
             // panelEstructuraAsiento
             // 
+            this.panelEstructuraAsiento.Controls.Add(this.buttonGuardarIngresarAsiento);
             this.panelEstructuraAsiento.Controls.Add(this.labelDenominacion);
             this.panelEstructuraAsiento.Controls.Add(this.textBox3);
             this.panelEstructuraAsiento.Controls.Add(this.textBox2);
@@ -138,6 +140,247 @@
             this.panelEstructuraAsiento.Name = "panelEstructuraAsiento";
             this.panelEstructuraAsiento.Size = new System.Drawing.Size(1121, 620);
             this.panelEstructuraAsiento.TabIndex = 0;
+            // 
+            // labelDenominacion
+            // 
+            this.labelDenominacion.AutoSize = true;
+            this.labelDenominacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDenominacion.Location = new System.Drawing.Point(277, 220);
+            this.labelDenominacion.Name = "labelDenominacion";
+            this.labelDenominacion.Size = new System.Drawing.Size(179, 16);
+            this.labelDenominacion.TabIndex = 30;
+            this.labelDenominacion.Text = "Denominación/Razón Social";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(280, 239);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.TabIndex = 29;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(106, 239);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(119, 22);
+            this.textBox2.TabIndex = 28;
+            // 
+            // labelRUCProvedor
+            // 
+            this.labelRUCProvedor.AutoSize = true;
+            this.labelRUCProvedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRUCProvedor.Location = new System.Drawing.Point(106, 220);
+            this.labelRUCProvedor.Name = "labelRUCProvedor";
+            this.labelRUCProvedor.Size = new System.Drawing.Size(37, 16);
+            this.labelRUCProvedor.TabIndex = 27;
+            this.labelRUCProvedor.Text = "RUC";
+            // 
+            // textBoxTipoProvedor
+            // 
+            this.textBoxTipoProvedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTipoProvedor.Location = new System.Drawing.Point(12, 239);
+            this.textBoxTipoProvedor.Name = "textBoxTipoProvedor";
+            this.textBoxTipoProvedor.Size = new System.Drawing.Size(33, 22);
+            this.textBoxTipoProvedor.TabIndex = 26;
+            // 
+            // labelTipoProvedor
+            // 
+            this.labelTipoProvedor.AutoSize = true;
+            this.labelTipoProvedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipoProvedor.Location = new System.Drawing.Point(12, 220);
+            this.labelTipoProvedor.Name = "labelTipoProvedor";
+            this.labelTipoProvedor.Size = new System.Drawing.Size(36, 16);
+            this.labelTipoProvedor.TabIndex = 25;
+            this.labelTipoProvedor.Text = "Tipo";
+            // 
+            // labelTituloProvedor
+            // 
+            this.labelTituloProvedor.AutoSize = true;
+            this.labelTituloProvedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTituloProvedor.Location = new System.Drawing.Point(11, 191);
+            this.labelTituloProvedor.Name = "labelTituloProvedor";
+            this.labelTituloProvedor.Size = new System.Drawing.Size(125, 20);
+            this.labelTituloProvedor.TabIndex = 24;
+            this.labelTituloProvedor.Text = "Provedor/Cliente";
+            // 
+            // textBoxFechaVenciomiento
+            // 
+            this.textBoxFechaVenciomiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFechaVenciomiento.Location = new System.Drawing.Point(679, 147);
+            this.textBoxFechaVenciomiento.Name = "textBoxFechaVenciomiento";
+            this.textBoxFechaVenciomiento.Size = new System.Drawing.Size(139, 22);
+            this.textBoxFechaVenciomiento.TabIndex = 23;
+            // 
+            // textBoxFechaEmision
+            // 
+            this.textBoxFechaEmision.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFechaEmision.Location = new System.Drawing.Point(527, 147);
+            this.textBoxFechaEmision.Name = "textBoxFechaEmision";
+            this.textBoxFechaEmision.Size = new System.Drawing.Size(113, 22);
+            this.textBoxFechaEmision.TabIndex = 22;
+            // 
+            // labelFechaVencimientoDocumento
+            // 
+            this.labelFechaVencimientoDocumento.AutoSize = true;
+            this.labelFechaVencimientoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFechaVencimientoDocumento.Location = new System.Drawing.Point(676, 128);
+            this.labelFechaVencimientoDocumento.Name = "labelFechaVencimientoDocumento";
+            this.labelFechaVencimientoDocumento.Size = new System.Drawing.Size(142, 16);
+            this.labelFechaVencimientoDocumento.TabIndex = 21;
+            this.labelFechaVencimientoDocumento.Text = "Fecha de Vencimiento";
+            // 
+            // labelFechaEmisionDocumento
+            // 
+            this.labelFechaEmisionDocumento.AutoSize = true;
+            this.labelFechaEmisionDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFechaEmisionDocumento.Location = new System.Drawing.Point(524, 128);
+            this.labelFechaEmisionDocumento.Name = "labelFechaEmisionDocumento";
+            this.labelFechaEmisionDocumento.Size = new System.Drawing.Size(116, 16);
+            this.labelFechaEmisionDocumento.TabIndex = 20;
+            this.labelFechaEmisionDocumento.Text = "Fecha de Emision";
+            // 
+            // textBoxNumeroDocumento
+            // 
+            this.textBoxNumeroDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNumeroDocumento.Location = new System.Drawing.Point(434, 147);
+            this.textBoxNumeroDocumento.Name = "textBoxNumeroDocumento";
+            this.textBoxNumeroDocumento.Size = new System.Drawing.Size(67, 22);
+            this.textBoxNumeroDocumento.TabIndex = 19;
+            // 
+            // textBoxSerieDocumento
+            // 
+            this.textBoxSerieDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSerieDocumento.Location = new System.Drawing.Point(361, 147);
+            this.textBoxSerieDocumento.Name = "textBoxSerieDocumento";
+            this.textBoxSerieDocumento.Size = new System.Drawing.Size(50, 22);
+            this.textBoxSerieDocumento.TabIndex = 18;
+            // 
+            // labelNumeroDocumento
+            // 
+            this.labelNumeroDocumento.AutoSize = true;
+            this.labelNumeroDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumeroDocumento.Location = new System.Drawing.Point(431, 128);
+            this.labelNumeroDocumento.Name = "labelNumeroDocumento";
+            this.labelNumeroDocumento.Size = new System.Drawing.Size(56, 16);
+            this.labelNumeroDocumento.TabIndex = 17;
+            this.labelNumeroDocumento.Text = "Número";
+            // 
+            // labelSerieDocumento
+            // 
+            this.labelSerieDocumento.AutoSize = true;
+            this.labelSerieDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSerieDocumento.Location = new System.Drawing.Point(358, 128);
+            this.labelSerieDocumento.Name = "labelSerieDocumento";
+            this.labelSerieDocumento.Size = new System.Drawing.Size(40, 16);
+            this.labelSerieDocumento.TabIndex = 16;
+            this.labelSerieDocumento.Text = "Serie";
+            // 
+            // textBoxTipoDocumento
+            // 
+            this.textBoxTipoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTipoDocumento.Location = new System.Drawing.Point(15, 147);
+            this.textBoxTipoDocumento.Name = "textBoxTipoDocumento";
+            this.textBoxTipoDocumento.Size = new System.Drawing.Size(33, 22);
+            this.textBoxTipoDocumento.TabIndex = 15;
+            // 
+            // labelTipoDocumento
+            // 
+            this.labelTipoDocumento.AutoSize = true;
+            this.labelTipoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipoDocumento.Location = new System.Drawing.Point(12, 128);
+            this.labelTipoDocumento.Name = "labelTipoDocumento";
+            this.labelTipoDocumento.Size = new System.Drawing.Size(36, 16);
+            this.labelTipoDocumento.TabIndex = 14;
+            this.labelTipoDocumento.Text = "Tipo";
+            // 
+            // listBox1
+            // 
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Items.AddRange(new object[] {
+            "00 Otros (especificar)",
+            "01 Factura",
+            "02 Recibo por Honorarios",
+            "03 Boleta de Venta",
+            "04 Liquidación de compra",
+            "05 Boleto de compañía de aviación comercial por el servicio de transporte aéreo d" +
+                "e pasajeros",
+            "06 Carta de porte aéreo por el servicio de transporte de carga aérea",
+            "07 Nota de crédito",
+            "08 Nota de débito",
+            "09 Guía de remisión - Remitente",
+            "10 Recibo por Arrendamiento",
+            resources.GetString("listBox1.Items"),
+            "12 Ticket o cinta emitido por máquina registradora",
+            "13 Documento emitido por bancos, instituciones financieras, crediticias y de segu" +
+                "ros que se encuentren bajo el control de la Superintendencia de Banca y Seguros",
+            "14 Recibo por servicios públicos de suministro de energía eléctrica, agua, teléfo" +
+                "no, telex y telegráficos y otros servicios complementarios que se incluyan en el" +
+                " recibo de servicio público ",
+            "15 Boleto emitido por las empresas de transporte público urbano de pasajeros",
+            "16 Boleto de viaje emitido por las empresas de transporte público interprovincial" +
+                " de pasajeros dentro del país",
+            "17 Documento emitido por la Iglesia Católica por el arrendamiento de bienes inmue" +
+                "bles",
+            resources.GetString("listBox1.Items1"),
+            "19 Boleto o entrada por atracciones y espectáculos públicos",
+            "20 Comprobante de Retención",
+            "21 Conocimiento de embarque por el servicio de transporte de carga marítima",
+            "22 Comprobante por Operaciones No Habituales",
+            "23 Pólizas de Adjudicación emitidas con ocasión del remate o adjudicación de bien" +
+                "es por venta forzada, por los martilleros o las entidades que rematen o subasten" +
+                " bienes por cuenta de terceros",
+            "24 Certificado de pago de regalías emitidas por PERUPETRO S.A",
+            "25 Documento de Atribución (Ley del Impuesto General a las Ventas e Impuesto Sele" +
+                "ctivo al Consumo, Art. 19º, último párrafo, R.S. N° 022-98-SUNAT).",
+            resources.GetString("listBox1.Items2"),
+            "27 Seguro Complementario de Trabajo de Riesgo",
+            "28 Tarifa Unificada de Uso de Aeropuerto",
+            "29 Documentos emitidos por la COFOPRI en calidad de oferta de venta de terrenos, " +
+                "los correspondientes a las subastas públicas y a la retribución de los servicios" +
+                " que presta",
+            "30 Documentos emitidos por las empresas que desempeñan el rol adquirente en los s" +
+                "istemas de pago mediante tarjetas de crédito y débito",
+            "31 Guía de Remisión - Transportista",
+            resources.GetString("listBox1.Items3"),
+            "34 Documento del Operador",
+            "35 Documento del Partícipe",
+            "36 Recibo de Distribución de Gas Natural",
+            "37 Documentos que emitan los concesionarios del servicio de revisiones técnicas v" +
+                "ehiculares, por la prestación de dicho servicio",
+            "50 Declaración Única de Aduanas - Importación definitiva                 ",
+            "52 Despacho Simplificado - Importación Simplificada                        ",
+            "53 Declaración de Mensajería o Courier                                         ",
+            "54 Liquidación de Cobranza                                                     ",
+            "87 Nota de Crédito Especial",
+            "88 Nota de Débito Especial",
+            "96 Exceso de crédito fiscal por retiro de bienes",
+            "99 Otros -Consolidado de Boletas de Venta"});
+            this.listBox1.Location = new System.Drawing.Point(54, 128);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(259, 20);
+            this.listBox1.TabIndex = 13;
+            // 
+            // labelTituloDocumento
+            // 
+            this.labelTituloDocumento.AutoSize = true;
+            this.labelTituloDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTituloDocumento.Location = new System.Drawing.Point(11, 93);
+            this.labelTituloDocumento.Name = "labelTituloDocumento";
+            this.labelTituloDocumento.Size = new System.Drawing.Size(92, 20);
+            this.labelTituloDocumento.TabIndex = 12;
+            this.labelTituloDocumento.Text = "Documento";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(106, 28);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(50, 22);
+            this.textBox1.TabIndex = 11;
             // 
             // textBoxNroAsiento
             // 
@@ -249,246 +492,16 @@
             this.labelSucursal.TabIndex = 0;
             this.labelSucursal.Text = "Sucursal";
             // 
-            // textBox1
+            // buttonGuardarIngresarAsiento
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(106, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(50, 22);
-            this.textBox1.TabIndex = 11;
-            // 
-            // labelTituloDocumento
-            // 
-            this.labelTituloDocumento.AutoSize = true;
-            this.labelTituloDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTituloDocumento.Location = new System.Drawing.Point(11, 93);
-            this.labelTituloDocumento.Name = "labelTituloDocumento";
-            this.labelTituloDocumento.Size = new System.Drawing.Size(92, 20);
-            this.labelTituloDocumento.TabIndex = 12;
-            this.labelTituloDocumento.Text = "Documento";
-            // 
-            // listBox1
-            // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Items.AddRange(new object[] {
-            "00 Otros (especificar)",
-            "01 Factura",
-            "02 Recibo por Honorarios",
-            "03 Boleta de Venta",
-            "04 Liquidación de compra",
-            "05 Boleto de compañía de aviación comercial por el servicio de transporte aéreo d" +
-                "e pasajeros",
-            "06 Carta de porte aéreo por el servicio de transporte de carga aérea",
-            "07 Nota de crédito",
-            "08 Nota de débito",
-            "09 Guía de remisión - Remitente",
-            "10 Recibo por Arrendamiento",
-            resources.GetString("listBox1.Items"),
-            "12 Ticket o cinta emitido por máquina registradora",
-            "13 Documento emitido por bancos, instituciones financieras, crediticias y de segu" +
-                "ros que se encuentren bajo el control de la Superintendencia de Banca y Seguros",
-            "14 Recibo por servicios públicos de suministro de energía eléctrica, agua, teléfo" +
-                "no, telex y telegráficos y otros servicios complementarios que se incluyan en el" +
-                " recibo de servicio público ",
-            "15 Boleto emitido por las empresas de transporte público urbano de pasajeros",
-            "16 Boleto de viaje emitido por las empresas de transporte público interprovincial" +
-                " de pasajeros dentro del país",
-            "17 Documento emitido por la Iglesia Católica por el arrendamiento de bienes inmue" +
-                "bles",
-            resources.GetString("listBox1.Items1"),
-            "19 Boleto o entrada por atracciones y espectáculos públicos",
-            "20 Comprobante de Retención",
-            "21 Conocimiento de embarque por el servicio de transporte de carga marítima",
-            "22 Comprobante por Operaciones No Habituales",
-            "23 Pólizas de Adjudicación emitidas con ocasión del remate o adjudicación de bien" +
-                "es por venta forzada, por los martilleros o las entidades que rematen o subasten" +
-                " bienes por cuenta de terceros",
-            "24 Certificado de pago de regalías emitidas por PERUPETRO S.A",
-            "25 Documento de Atribución (Ley del Impuesto General a las Ventas e Impuesto Sele" +
-                "ctivo al Consumo, Art. 19º, último párrafo, R.S. N° 022-98-SUNAT).",
-            resources.GetString("listBox1.Items2"),
-            "27 Seguro Complementario de Trabajo de Riesgo",
-            "28 Tarifa Unificada de Uso de Aeropuerto",
-            "29 Documentos emitidos por la COFOPRI en calidad de oferta de venta de terrenos, " +
-                "los correspondientes a las subastas públicas y a la retribución de los servicios" +
-                " que presta",
-            "30 Documentos emitidos por las empresas que desempeñan el rol adquirente en los s" +
-                "istemas de pago mediante tarjetas de crédito y débito",
-            "31 Guía de Remisión - Transportista",
-            resources.GetString("listBox1.Items3"),
-            "34 Documento del Operador",
-            "35 Documento del Partícipe",
-            "36 Recibo de Distribución de Gas Natural",
-            "37 Documentos que emitan los concesionarios del servicio de revisiones técnicas v" +
-                "ehiculares, por la prestación de dicho servicio",
-            "50 Declaración Única de Aduanas - Importación definitiva                 ",
-            "52 Despacho Simplificado - Importación Simplificada                        ",
-            "53 Declaración de Mensajería o Courier                                         ",
-            "54 Liquidación de Cobranza                                                     ",
-            "87 Nota de Crédito Especial",
-            "88 Nota de Débito Especial",
-            "96 Exceso de crédito fiscal por retiro de bienes",
-            "99 Otros -Consolidado de Boletas de Venta"});
-            this.listBox1.Location = new System.Drawing.Point(54, 128);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(259, 20);
-            this.listBox1.TabIndex = 13;
-            // 
-            // labelTipoDocumento
-            // 
-            this.labelTipoDocumento.AutoSize = true;
-            this.labelTipoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTipoDocumento.Location = new System.Drawing.Point(12, 128);
-            this.labelTipoDocumento.Name = "labelTipoDocumento";
-            this.labelTipoDocumento.Size = new System.Drawing.Size(36, 16);
-            this.labelTipoDocumento.TabIndex = 14;
-            this.labelTipoDocumento.Text = "Tipo";
-            // 
-            // textBoxTipoDocumento
-            // 
-            this.textBoxTipoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTipoDocumento.Location = new System.Drawing.Point(15, 147);
-            this.textBoxTipoDocumento.Name = "textBoxTipoDocumento";
-            this.textBoxTipoDocumento.Size = new System.Drawing.Size(33, 22);
-            this.textBoxTipoDocumento.TabIndex = 15;
-            // 
-            // labelSerieDocumento
-            // 
-            this.labelSerieDocumento.AutoSize = true;
-            this.labelSerieDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSerieDocumento.Location = new System.Drawing.Point(358, 128);
-            this.labelSerieDocumento.Name = "labelSerieDocumento";
-            this.labelSerieDocumento.Size = new System.Drawing.Size(40, 16);
-            this.labelSerieDocumento.TabIndex = 16;
-            this.labelSerieDocumento.Text = "Serie";
-            // 
-            // labelNumeroDocumento
-            // 
-            this.labelNumeroDocumento.AutoSize = true;
-            this.labelNumeroDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNumeroDocumento.Location = new System.Drawing.Point(431, 128);
-            this.labelNumeroDocumento.Name = "labelNumeroDocumento";
-            this.labelNumeroDocumento.Size = new System.Drawing.Size(56, 16);
-            this.labelNumeroDocumento.TabIndex = 17;
-            this.labelNumeroDocumento.Text = "Número";
-            // 
-            // textBoxSerieDocumento
-            // 
-            this.textBoxSerieDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSerieDocumento.Location = new System.Drawing.Point(361, 147);
-            this.textBoxSerieDocumento.Name = "textBoxSerieDocumento";
-            this.textBoxSerieDocumento.Size = new System.Drawing.Size(50, 22);
-            this.textBoxSerieDocumento.TabIndex = 18;
-            // 
-            // textBoxNumeroDocumento
-            // 
-            this.textBoxNumeroDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNumeroDocumento.Location = new System.Drawing.Point(434, 147);
-            this.textBoxNumeroDocumento.Name = "textBoxNumeroDocumento";
-            this.textBoxNumeroDocumento.Size = new System.Drawing.Size(67, 22);
-            this.textBoxNumeroDocumento.TabIndex = 19;
-            // 
-            // labelFechaEmisionDocumento
-            // 
-            this.labelFechaEmisionDocumento.AutoSize = true;
-            this.labelFechaEmisionDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFechaEmisionDocumento.Location = new System.Drawing.Point(524, 128);
-            this.labelFechaEmisionDocumento.Name = "labelFechaEmisionDocumento";
-            this.labelFechaEmisionDocumento.Size = new System.Drawing.Size(116, 16);
-            this.labelFechaEmisionDocumento.TabIndex = 20;
-            this.labelFechaEmisionDocumento.Text = "Fecha de Emision";
-            // 
-            // labelFechaVencimientoDocumento
-            // 
-            this.labelFechaVencimientoDocumento.AutoSize = true;
-            this.labelFechaVencimientoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFechaVencimientoDocumento.Location = new System.Drawing.Point(676, 128);
-            this.labelFechaVencimientoDocumento.Name = "labelFechaVencimientoDocumento";
-            this.labelFechaVencimientoDocumento.Size = new System.Drawing.Size(142, 16);
-            this.labelFechaVencimientoDocumento.TabIndex = 21;
-            this.labelFechaVencimientoDocumento.Text = "Fecha de Vencimiento";
-            // 
-            // textBoxFechaEmision
-            // 
-            this.textBoxFechaEmision.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFechaEmision.Location = new System.Drawing.Point(527, 147);
-            this.textBoxFechaEmision.Name = "textBoxFechaEmision";
-            this.textBoxFechaEmision.Size = new System.Drawing.Size(113, 22);
-            this.textBoxFechaEmision.TabIndex = 22;
-            // 
-            // textBoxFechaVenciomiento
-            // 
-            this.textBoxFechaVenciomiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFechaVenciomiento.Location = new System.Drawing.Point(679, 147);
-            this.textBoxFechaVenciomiento.Name = "textBoxFechaVenciomiento";
-            this.textBoxFechaVenciomiento.Size = new System.Drawing.Size(139, 22);
-            this.textBoxFechaVenciomiento.TabIndex = 23;
-            // 
-            // labelTituloProvedor
-            // 
-            this.labelTituloProvedor.AutoSize = true;
-            this.labelTituloProvedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTituloProvedor.Location = new System.Drawing.Point(11, 191);
-            this.labelTituloProvedor.Name = "labelTituloProvedor";
-            this.labelTituloProvedor.Size = new System.Drawing.Size(125, 20);
-            this.labelTituloProvedor.TabIndex = 24;
-            this.labelTituloProvedor.Text = "Provedor/Cliente";
-            // 
-            // labelTipoProvedor
-            // 
-            this.labelTipoProvedor.AutoSize = true;
-            this.labelTipoProvedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTipoProvedor.Location = new System.Drawing.Point(12, 220);
-            this.labelTipoProvedor.Name = "labelTipoProvedor";
-            this.labelTipoProvedor.Size = new System.Drawing.Size(36, 16);
-            this.labelTipoProvedor.TabIndex = 25;
-            this.labelTipoProvedor.Text = "Tipo";
-            // 
-            // textBoxTipoProvedor
-            // 
-            this.textBoxTipoProvedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTipoProvedor.Location = new System.Drawing.Point(12, 239);
-            this.textBoxTipoProvedor.Name = "textBoxTipoProvedor";
-            this.textBoxTipoProvedor.Size = new System.Drawing.Size(33, 22);
-            this.textBoxTipoProvedor.TabIndex = 26;
-            // 
-            // labelRUCProvedor
-            // 
-            this.labelRUCProvedor.AutoSize = true;
-            this.labelRUCProvedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRUCProvedor.Location = new System.Drawing.Point(106, 220);
-            this.labelRUCProvedor.Name = "labelRUCProvedor";
-            this.labelRUCProvedor.Size = new System.Drawing.Size(37, 16);
-            this.labelRUCProvedor.TabIndex = 27;
-            this.labelRUCProvedor.Text = "RUC";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(106, 239);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(119, 22);
-            this.textBox2.TabIndex = 28;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(280, 239);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 29;
-            // 
-            // labelDenominacion
-            // 
-            this.labelDenominacion.AutoSize = true;
-            this.labelDenominacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDenominacion.Location = new System.Drawing.Point(277, 220);
-            this.labelDenominacion.Name = "labelDenominacion";
-            this.labelDenominacion.Size = new System.Drawing.Size(179, 16);
-            this.labelDenominacion.TabIndex = 30;
-            this.labelDenominacion.Text = "Denominación/Razón Social";
+            this.buttonGuardarIngresarAsiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGuardarIngresarAsiento.Location = new System.Drawing.Point(974, 17);
+            this.buttonGuardarIngresarAsiento.Name = "buttonGuardarIngresarAsiento";
+            this.buttonGuardarIngresarAsiento.Size = new System.Drawing.Size(100, 33);
+            this.buttonGuardarIngresarAsiento.TabIndex = 31;
+            this.buttonGuardarIngresarAsiento.Text = "Guardar";
+            this.buttonGuardarIngresarAsiento.UseVisualStyleBackColor = true;
+            this.buttonGuardarIngresarAsiento.Click += new System.EventHandler(this.buttonGuardarIngresarAsiento_Click);
             // 
             // IngresarAsiento
             // 
@@ -546,5 +559,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label labelRUCProvedor;
         private System.Windows.Forms.TextBox textBoxTipoProvedor;
+        private System.Windows.Forms.Button buttonGuardarIngresarAsiento;
     }
 }
