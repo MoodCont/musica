@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         private void buttonGuardarIngresarAsiento_Click(object sender, EventArgs e)
         {
             bool validar = true;
-            //crear el periodo
+            //crear el periodo text
             string periodo = "";
             if( textBoxPeriodoAnio.Text.Length == 4 && textBoxPeriodoMes.Text.Length == 2)
             {
